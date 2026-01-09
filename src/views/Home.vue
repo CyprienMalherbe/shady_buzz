@@ -14,7 +14,6 @@ export default {
 <template>
   <div class="home">
     <div class="overlay-content">
-      <div class="spacer"></div>
       <Join />
       <div class="spacer"></div>
       <Presentation />
@@ -24,7 +23,7 @@ export default {
 
 <style scoped>
 .home {
-  height: 200vh;
+  height: 150vh;
   background-image: url('@/assets/logo.png');
   background-size: cover;
   background-position: center;
@@ -36,7 +35,7 @@ export default {
   z-index: 1;
   color: white;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
   transition: transform 0.1s linear;
 }
 .home::before {
@@ -47,6 +46,6 @@ export default {
   z-index: 0;
 }
 .spacer {
-  height: 15vh;
+  height: 8vh;
 }
 </style>

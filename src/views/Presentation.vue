@@ -1,5 +1,5 @@
 <script>
-import youngImg from '@/assets/young.jpg'
+import aboutImg from '@/assets/about.jpeg'
 import adultsImg from '@/assets/adults.jpg'
 import licencedImg from '@/assets/licenced.jpg'
 import eventImg from '@/assets/events.jpg'
@@ -11,8 +11,8 @@ export default {
   data () {
     return {
       cards: [
-        { title: 'A propos', image: adultsImg, route: 'about' },
-        { title: 'Nos prestations', image: youngImg, route: 'services' },
+        { title: 'À propos', image: aboutImg, route: 'about' },
+        { title: 'Prestations', image: adultsImg, route: 'services' },
         { title: 'Galerie', image: chartImg, route: 'pictures' },
         { title: 'Tarifs', image: trainingImg, route: 'costs' },
         { title: 'Témoignages', image: eventImg, route: 'testimonies' },
