@@ -24,7 +24,7 @@ export default {
 <style scoped>
 .home {
   height: 150vh;
-  background-image: url('@/assets/logo.png');
+  background-image: url('@/assets/logo-with-beard.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
