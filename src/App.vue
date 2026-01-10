@@ -1,7 +1,7 @@
 <script>
 import { RouterView } from 'vue-router'
 import Footer from './views/Footer.vue'
-import logoImg from './assets/logo-with-beard.png'
+import logoImg from './assets/logo-with-beard-and-hand.png'
 
 export default {
   name: 'App',
