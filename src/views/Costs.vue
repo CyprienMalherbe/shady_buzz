@@ -1,20 +1,16 @@
 <script>
-import competitionLicenceImg from '@/assets/competition-licence.jpg'
-import spareTimeLicenceImg from '@/assets/spare-time-licence.jpg'
-import awakeningLicenceImg from '@/assets/awakening-licence.jpg'
-import veryYoungLicenceImg from '@/assets/very-young-licence.jpg'
-import youngLicenceImg from '@/assets/young-licence.jpg'
+import classicaFormulaImg from '@/assets/classica-formula.jpg'
+import classicaFormulaLongImg from '@/assets/classica-formula-long.jpg'
+import personnalizedFormulaImg from '@/assets/personnalized-formula.jpg'
 
 export default {
-  name: 'Licences',
+  name: 'Costs',
   data () {
     return {
       cards: [
-        { title: 'Compétition', text: '205€', image: competitionLicenceImg },
-        { title: 'Loisir', text: '160€', image: spareTimeLicenceImg },
-        { title: 'Éveil', text: '35€', image: awakeningLicenceImg },
-        { title: 'Mini-poussin - Poussin - Pupille - Benjamin', text: '120€', image: veryYoungLicenceImg },
-        { title: 'Minime - Cadet - Junior', text: '160€', image: youngLicenceImg },
+        { title: "Formule 'classique'", text: '200€', image: classicaFormulaImg },
+        { title: "Formule 'classique longue'", text: '250€', image: classicaFormulaLongImg },
+        { title: 'Formule personnalisée (durée et / ou thèmes)', text: 'À discuter ensemble', image: personnalizedFormulaImg },
       ],
     }
   },
@@ -23,12 +19,27 @@ export default {
 
 <template>
   <div class="container">
-    <h1 class="title">Nos licences</h1>
-    <p class="subtitle">L'adhésion au Team Val'Eure Triathlon vous permet d'accéder au plan d'entraînement ainsi que jusqu'à 8 créneaux d'entraînements collectifs hebdomadaires encadrés dans les trois disciplines (natation, course à pied et vélo + un créneau de renfo / PPG), de quoi réaliser vos objectifs, qu'il s'agisse de réaliser un premier enchaînement complet, d'avoir une pratique orientée vers le plaisir et le défi personnel ou bien de performer sur courte distance, distance olympique ou encore vous lancer sur de la longue distance.</p>
-    <p class="subtitle">Pour les enfants de l'école de Triathlon à qui sont proposés 4 créneaux par semaine, l'adhésion comprend également le prêt de la trifonction ainsi que les inscriptions aux épreuves FFTri.</p>
-    <p class="subtitle">Si vous êtes éligible, le pass sport peut être utilisé pour le paiement de la licence, ainsi que la carte atout Normandie pour les moins de 25 ans.</p>
-    <p class="subtitle">Pour le public adultes, deux types de licences sont proposés: loisir et compétition. Aucune différence au quotidien dans le club, mais un.e licencié.e adulte "loisir" devra souscrire à un pass compétition délivré par la ligue pour s'aligner sur une course fédérale.</p>
-    <p class="subtitle">À très vite en séance !</p>
+    <h1 class="title">Mes tarifs</h1>
+
+    <p class="subtitle">
+      Ma force réside dans ma capacité à adapter la durée des jeux, les thèmes,
+      leur difficulté ou encore leur originalité en fonction de vos envies
+      et de votre événement.
+    </p>
+
+    <p class="subtitle">
+      Le tarif peut donc varier selon plusieurs critères : le temps de déplacement,
+      le temps de préparation des jeux, ainsi que la durée de l’animation sur place.
+      Je vous invite à
+      <router-link to="/contact" class="contact-link">me contacter</router-link>
+      pour un devis personnalisé ou pour toute demande d’information.
+    </p>
+
+    <p class="subtitle">
+      Les tarifs ci-dessous sont donnés à titre indicatif afin de vous permettre
+      de vous faire une première idée.
+    </p>
+
     <div class="cards-section">
       <v-card
         v-for="card in cards"
@@ -43,16 +54,49 @@ export default {
         <div class="card-text">{{ card.text }}</div>
       </v-card>
     </div>
-    <h1 class="title">Guide du parfait triathlète</h1>
-    <p class="subtitle">Étape 1 : Rends-toi sur <a href="https://espacetri.fftri.com/" target="_blank" rel="noopener noreferrer"> Espace Tri </a> et fais ta demande de licence. C'est un peu comme un jeu vidéo, mais en vrai.</p>
-    <p class="subtitle">Étape 2 : Une fois ta licence en poche, il faut remplir le formulaire qui te correspond (on n'a pas voulu te surcharger, on a pensé à tout). C'est là que tu nous diras tout, ou presque !</p>
-    <p class="subtitle"> <a href="https://6wikj7cq.forms.app/formulaire-dinscription-ecole-de-triathlon-du-team-valeure-triathlon" target="_blank" rel="noopener noreferrer"> Formulaire Jeunes </a></p>
-    <p class="subtitle"> <a href="https://6wikj7cq.forms.app/formulaire-dinscription-au-team-valeure-traithlon" target="_blank" rel="noopener noreferrer"> Formulaire Adultes </a></p>
-    <p class="subtitle">Étape 3 : Si tu as suivi les deux premières étapes à la lettre (et on n'en doute pas), tu recevras un email de notre secrétaire. C'est le Saint Graal ! Il te confirmera que ton dossier est complet et te donnera le guide de bienvenue. Tu seras officiellement l'un des nôtres !</p>
+      <h1 class="title">Les formules</h1>
+
+      <p class="subtitle">
+        Globalement, je propose des animations composées de plusieurs manches,
+        avec l’ensemble du matériel nécessaire.
+      </p>
+
+      <p class="subtitle">
+        <strong>Formule « classique »</strong> :
+        4 jeux avec 3 pauses, pour une durée d’animation d’environ 2 heures.
+      </p>
+
+      <p class="subtitle">
+        <strong>Formule « classique longue »</strong> :
+        6 jeux avec 5 pauses, pour une durée d’animation d’environ 3 heures.
+      </p>
+
+      <p class="subtitle">
+        Ces formules comprennent le déplacement standard (dans un rayon de 20 km),
+        le temps d’installation, ainsi que l’animation sur place.
+      </p>
+
+      <p class="subtitle">
+        L’animation « classique » correspond à une sélection de jeux prédéfinis.
+        En cas de personnalisation plus poussée (thèmes spécifiques, formats particuliers,
+        contraintes spécifiques), une formule personnalisée sera proposée.
+      </p>
+
   </div>
 </template>
 
 <style scoped>
+  .contact-link {
+  color: #4fc3f7;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contact-link:hover {
+  color: #81d4fa;
+}
+
 .title {
   margin-top: 7vh;
   font-size: 2rem;

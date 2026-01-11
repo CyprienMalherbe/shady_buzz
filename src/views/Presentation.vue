@@ -1,10 +1,9 @@
 <script>
 import aboutImg from '@/assets/about.jpeg'
-import adultsImg from '@/assets/adults.jpg'
-import licencedImg from '@/assets/licenced.jpg'
-import eventImg from '@/assets/events.jpg'
-import trainingImg from '@/assets/training.jpg'
-import chartImg from '@/assets/chart.jpg'
+import picturesImg from '@/assets/pictures.jpg'
+import contactImg from '@/assets/contact.jpg'
+import costsImg from '@/assets/costs.jpg'
+import testimoniesImg from '@/assets/testimonies.jpg'
 
 export default {
   name: 'Presentation',
@@ -12,11 +11,10 @@ export default {
     return {
       cards: [
         { title: 'À propos', image: aboutImg, route: 'about' },
-        { title: 'Prestations', image: adultsImg, route: 'services' },
-        { title: 'Galerie', image: chartImg, route: 'pictures' },
-        { title: 'Tarifs', image: trainingImg, route: 'costs' },
-        { title: 'Témoignages', image: eventImg, route: 'testimonies' },
-        { title: 'Contact', image: licencedImg, route: 'contact' },
+        { title: 'Galerie', image: picturesImg, route: 'pictures' },
+        { title: 'Tarifs', image: costsImg, route: 'costs' },
+        { title: 'Témoignages', image: testimoniesImg, route: 'testimonies' },
+        { title: 'Contact', image: contactImg, route: 'contact' },
       ],
     }
   },
@@ -24,7 +22,6 @@ export default {
 </script>
 
 <template>
-  <h2 class="big-title">Nos différentes sections</h2>
   <div class="cards-section">
     <v-card
       v-for="card in cards"

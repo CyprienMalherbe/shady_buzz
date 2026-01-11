@@ -1,55 +1,96 @@
 <script>
-import youngAquathlonImg from '@/assets/young-aquathlon.jpg'
-import triathlonImg from '@/assets/triathlon.jpg'
-import aquathlonImg from '@/assets/aquathlon.jpg'
-import bikeAndRunImg from '@/assets/bike-and-run.jpg'
-
 export default {
-  name: 'Testimonies',
-  data () {
+  name: 'TestimoniesCarousel',
+  data() {
     return {
-      cards: [
-        { title: 'Aquathlon jeunes', image: youngAquathlonImg, url: 'https://www.klikego.com/inscription/aquathlon-jeunes-de-gaillon-2025/triathlon/1643334174070-6' },
-        { title: 'Triathlon des 2 amants', image: triathlonImg, url: 'https://www.klikego.com/inscription/triathlon-des-2-amants-2025/triathlon/1643334174070-5' },
-        { title: 'Aquathlon des 2 amants', image: aquathlonImg, url: 'https://www.klikego.com/inscription/aquathlon-des-2-amants-2025/triathlon/1643334174070-7?' },
-        { title: 'Bike and Run des Mousseaux', image: bikeAndRunImg, url: 'https://www.lntri.fr/agenda/bike-and-run-des-mousseaux/' },
+      testimonies: [
+        {
+          name: 'Rachel M.',
+          role: 'Participante',
+          rating: 5,
+          text: 'Une animation incroyable, tout le monde a adoré !',
+        },
+        {
+          name: 'Alexis R.',
+          role: 'Parent',
+          rating: 4,
+          text: 'On s’est éclatés avec les quiz, très professionnel.',
+        },
       ],
-    }
+      carouselIndex: 0,
+    };
   },
-}
+  mounted() {
+    // Défilement automatique toutes les 5 secondes
+    this.interval = setInterval(() => {
+      this.nextSlide();
+    }, 5000);
+  },
+  beforeUnmount() {
+    clearInterval(this.interval);
+  },
+  methods: {
+    nextSlide() {
+      this.carouselIndex = (this.carouselIndex + 1) % this.testimonies.length;
+    },
+    prevSlide() {
+      this.carouselIndex = (this.carouselIndex - 1 + this.testimonies.length) % this.testimonies.length;
+    },
+  },
+};
 </script>
 
 <template>
   <div class="container">
-    <h1 class="title">Nos différents événements</h1>
-    <p class="subtitle">Vous trouverez ci-après nos différents événements de l'année</p>
-    <div class="cards-section">
+    <h1 class="title">Ils ont aimé</h1>
+    <div class="carousel">
       <v-card
-        v-for="card in cards"
-        :key="card.title"
-        class="card"
-        color="blue"
-        variant="elevated"
+        v-for="(t, index) in testimonies"
+        :key="t.name"
+        class="testimonial-card"
+        color="blue lighten-2"
         rounded="xl"
-        :image="card.image"
-        :href="card.url"
-        target="_blank"
-        rel="noopener"
+        elevation="6"
+        v-show="index === carouselIndex"
+        transition="fade-transition"
       >
-        <v-card-title class="card-title">{{ card.title }}</v-card-title>
+        <v-card-text class="testimonial-text">
+          "{{ t.text }}"
+        </v-card-text>
+        <v-card-actions class="testimonial-footer">
+          <div class="stars">
+            <v-icon v-for="n in 5" :key="n" color="yellow darken-3">
+              {{ n <= t.rating ? 'mdi-star' : 'mdi-star-outline' }}
+            </v-icon>
+          </div>
+          <div class="author">
+            <strong>{{ t.name }}</strong>, {{ t.role }}
+          </div>
+        </v-card-actions>
       </v-card>
+
+      <div class="carousel-controls">
+        <v-btn icon @click="prevSlide">
+          <v-icon>mdi-chevron-left</v-icon>
+        </v-btn>
+        <v-btn icon @click="nextSlide">
+          <v-icon>mdi-chevron-right</v-icon>
+        </v-btn>
+      </div>
     </div>
+      <p class="subtitle">J'espère avoir plus de témoignages à l'avenir 😊.</p>
   </div>
 </template>
 
 <style scoped>
-.title {
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
   margin-top: 7vh;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: white;
-  max-width: 40vw;
 }
 
 .subtitle {
@@ -57,84 +98,85 @@ export default {
   margin-bottom: 20px;
   color: white;
   max-width: 40vw;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  width: 100%;
+  margin-top: 7vh;
 }
 
-.cards-section {
-  margin-top: 4vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  justify-items: center;
-  width: 100%;
-}
-
-.card {
-  width: 100%;
-  max-width: 25vw;
-  min-width: 250px;
-  min-height: 150px;
-  height: 25vh;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-  position: relative;
-}
-
-.card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.card-title {
-  font-size: 1.2rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.title {
+  font-size: 2rem;
+  font-weight: bold;
   color: white;
-  background: rgba(0,0,0,0.4);
-  text-align: center;
-  padding: 5px 10px;
+  margin-bottom: 2rem;
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+}
+
+.testimonial-card {
+  padding: 1.5rem;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stars {
+  display: flex;
+}
+
+.author {
+  font-size: 0.9rem;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10; /* Assure que les boutons sont au-dessus des cartes */
+  padding: 0 10px;
+}
+
+.carousel-controls v-btn {
+  pointer-events: auto; /* Assure que les boutons réagissent aux clics */
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+.fade-transition-enter-active,
+.fade-transition-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-transition-enter-from,
+.fade-transition-leave-to {
+  opacity: 0;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .cards-section {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 0 1rem;
-  }
-  .card {
-    max-width: 100%;
-    height: auto;
-    min-height: 200px;
-  }
-  .card-title {
-    font-size: 1rem;
-    padding: 4px 8px;
-  }
   .title {
     font-size: 1.5rem;
-    max-width: 90%;
-    margin-top: 5vh;
   }
-  .subtitle {
+  .testimonial-text {
     font-size: 1rem;
-    max-width: 90%;
+  }
+  .carousel-controls v-btn {
+    background-color: rgba(0,0,0,0.5);
   }
 }
 </style>

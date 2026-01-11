@@ -64,7 +64,7 @@ export default {
     <v-container class="d-flex justify-center align-center" fluid>
       <v-card width="600" elevation="8" class="pa-6 rounded-xl form-card">
         <v-card-title class="text-h5 font-weight-bold text-center mb-4">
-          ✉️ Contactez-nous
+          ✉️ Me contacter
         </v-card-title>
         <v-form ref="contactForm" @submit.prevent="send">
           <v-text-field

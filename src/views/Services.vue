@@ -1,202 +1,188 @@
 <script>
-import cynthiaSuardImg from '@/assets/cynthia-suard.png'
-import alexandreLebougautImg from '@/assets/alexandre-lebougaut.png'
-import alexisRousselinImg from '@/assets/alexis-rousselin.png'
-import vincentRatelImg from '@/assets/vincent-ratel.png'
-import vincentPetitImg from '@/assets/vincent-petit.png'
-import eliseRousselinImg from '@/assets/elise-rousselin.png'
-import margotRousselinImg from '@/assets/margot-rousselin.png'
-import margotDelaunayImg from '@/assets/margot-delaunay.png'
-import cyprienMalherbeImg from '@/assets/cyprien-malherbe.png'
-import sebastienAndreImg from '@/assets/sebastien-andre.png'
-import geraldVigerImg from '@/assets/gerald-viger.png'
-import mickaelSuardImg from '@/assets/mickael-suard.png'
+import buzzersImg from '@/assets/buzzers.jpg'
+import speakersImg from '@/assets/speakers.jpg'
+import projecteurImg from '@/assets/projecteur.jpg'
+import whiteBoardImg from '@/assets/whiteboard.jpg'
+import brainImg from '@/assets/brain.jpg'
 
 export default {
-  name: 'Chart',
-  data() {
+  name: 'Costs',
+  data () {
     return {
-      team: [
-        { name: 'Cynthia Suard', role: 'Présidente / Entraîneur jeunes / BF5', organization: 'Bureau', image: cynthiaSuardImg },
-        { name: 'Alexandre Lebougault', role: 'Vice président / Responsable partenaires', organization: 'CODIR', image: alexandreLebougautImg },
-        { name: 'Alexis Rousselin', role: 'Responsable planification des entraînements et organisations sportives / Entraîneur jeunes et adultes / BF3 / BNSSA', organization: 'CODIR', image: alexisRousselinImg },
-        { name: 'Vincent Ratel', role: 'Responsable événements club / Entraîneur renforcement musculaire', organization: 'CODIR', image: vincentRatelImg },
-        { name: 'Vincent Petit', role: 'Trésorier / Entraîneur jeunes et adultes / BF2', organization: 'Bureau', image: vincentPetitImg },
-        { name: 'Elise Rousselin', role: "Secrétaire de l'école de triathlon / Responsable groupe éveils", organization: 'CODIR', image: eliseRousselinImg },
-        { name: 'Margot Rousselin', role: 'Responsable communication / Entraîneur jeunes / BF2', organization: 'CODIR', image: margotRousselinImg },
-        { name: 'Margot Delaunay', role: 'Secrétaire & responsable des inscriptions et de commande des tenues', organization: 'Bureau', image: margotDelaunayImg },
-        { name: 'Cyprien Malherbe', role: 'Responsable web', organization: 'Support', image: cyprienMalherbeImg },
-        { name: 'Sébastien André', role: 'BF5 BNSSA', organization: 'Support', image: sebastienAndreImg },
-        { name: 'Gérald Viger', role: 'BNSSA', organization: 'Support', image: geraldVigerImg },
-        { name: 'Mickael Suard', role: 'Responsable Grand Prix / BF5', organization: 'CODIR', image: mickaelSuardImg },
-      ]
-    }
-  },
-  computed: {
-    bureauOrganization() {
-      return this.team.filter(m => m.organization === 'Bureau')
-    },
-    CODIROrganization() {
-      return this.team.filter(m => m.organization === 'CODIR')
-    },
-    supportOrganization() {
-      return this.team.filter(m => m.organization === 'Support')
+      cards: [
+        { title: "Buzzers (jusqu'à 10)", image: buzzersImg },
+        { title: "Tableau blanc, ardoises et stylos", image: whiteBoardImg },
+        { title: 'Vidéoprojecteur', image: projecteurImg },
+        { title: 'Enceintes moyenne portée et micro', image: speakersImg },
+        { title: 'Mon imagination, ma sociabilité et mon humour 😊', image: brainImg },
+      ],
     }
   },
 }
 </script>
 
 <template>
-  <div class="chart-container">
-    <h2 class="chart-title">Le Bureau</h2>
-    <div class="cards-wrapper">
-      <div v-for="(member, index) in bureauOrganization"
-      :key="index"
-      class="team-card">
-        <div class="avatar">
-          <img :src="member.image" :alt="member.name" :class="`avatar-${index}`"/>
-        </div>
-        <div class="info">
-          <h3>{{ member.name }}</h3>
-          <p class="role">{{ member.role }}</p>
-        </div>
-      </div>
-    </div>
-    <h2 class="chart-title">Le CODIR</h2>
-    <div class="cards-wrapper">
-      <div v-for="(member, index) in CODIROrganization"
-      :key="index"
-      class="team-card">
-        <div class="avatar">
-          <img :src="member.image" :alt="member.name" :class="`avatar-${index}`"/>
-        </div>
-        <div class="info">
-          <h3>{{ member.name }}</h3>
-          <p class="role">{{ member.role }}</p>
-        </div>
-      </div>
-    </div>
-    <h2 class="chart-title">Fonctions supports</h2>
-    <div class="cards-wrapper">
-      <div v-for="(member, index) in supportOrganization"
-      :key="index"
-      class="team-card">
-        <div class="avatar">
-          <img :src="member.image" :alt="member.name" :class="`avatar-${index}`"/>
-        </div>
-        <div class="info">
-          <h3>{{ member.name }}</h3>
-          <p class="role">{{ member.role }}</p>
-        </div>
-      </div>
+  <div class="container">
+    <h1 class="title">Mes prestations</h1>
+<p class="subtitle">
+  Je me déplace dans l’Eure et ses environs (selon la distance à parcourir).
+  Si vous vous demandez si une intervention est possible chez vous, n’hésitez pas à
+  <router-link to="/contact" class="contact-link">me contacter</router-link>
+  afin que nous en discutions 😊.
+</p>
+
+<p class="subtitle">
+  J’anime des jeux aussi bien à domicile que dans des salles privatisées
+  (anniversaires, EVG / EVJF, mariages, bars…), mais également en entreprise
+  (séminaires, écoles, EHPAD…).
+</p>
+
+<p class="subtitle">
+  Je dispose d’un matériel sonore adapté à des groupes d’environ 60 personnes
+  dans une salle des fêtes. Au-delà, cela devient techniquement plus complexe.
+</p>
+
+<p class="subtitle">
+  Je m’adapte à vos demandes en semaine comme en week-end,
+  sous réserve de disponibilité bien évidemment 😊.
+</p>
+
+<p class="subtitle">
+  Enfin, je suis animateur, et non DJ.
+  Je peux assurer une ambiance musicale de fond pendant les jeux,
+  mais je ne propose pas de prestations de mix ou de soirée dansante jusqu’au bout de la nuit 😊.
+</p>
+    <div class="cards-section">
+      <v-card
+        v-for="card in cards"
+        :key="card.title"
+        class="card"
+        color="blue"
+        variant="elevated"
+        rounded="xl"
+        :image="card.image"
+      >
+        <v-card-title class="card-title">{{ card.title }}</v-card-title>
+      </v-card>
     </div>
   </div>
 </template>
 
 <style scoped>
-.avatar-0, .avatar-2, .avatar-3, .avatar-5, .avatar-6, .avatar-11 {
-  object-position: top;
+  .contact-link {
+  color: #4fc3f7;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.chart-container {
-  max-width: 70vw;
-  margin: 2rem auto;
-  text-align: center;
-  width: 100%;
+.contact-link:hover {
+  color: #81d4fa;
 }
 
-.chart-title {
+.title {
+  margin-top: 7vh;
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
   color: white;
-  padding-top: 7vh;
+  max-width: 40vw;
+  text-align: center;
 }
 
-.cards-wrapper {
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: white;
+  max-width: 40vw;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.cards-section {
+  margin-top: 4vh;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-items: center;
+  width: 100%;
 }
 
-/* Card styles */
-.team-card {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  width: 220px;
-  padding: 1.5rem 1rem;
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.team-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.avatar {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 1rem;
-  border-radius: 50%;
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 25vw;
+  min-width: 250px;
+  min-height: 150px;
+  height: 25vh;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
-  border: 3px solid #007BFF;
 }
 
-.avatar img {
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 
-.info h3 {
+.card-title {
   font-size: 1.2rem;
-  margin-bottom: 0.3rem;
-  font-weight: bold;
-  color: #222;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-align: center;
+  padding: 5px 10px;
+  z-index: 2;
 }
 
-.info .role {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 0.5rem;
+.card:hover {
+  opacity: 1;
 }
 
-.info .email {
-  font-size: 0.9rem;
-  color: #888;
-  word-break: break-all;
-}
-
-/* Responsive mobile */
+/* Mobile */
 @media (max-width: 768px) {
-  .cards-wrapper {
+  .cards-section {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 0 1rem;
   }
-  .team-card {
-    width: 90%;
-    padding: 1rem;
+  .card {
+    max-width: 100%;
+    height: auto;
+    min-height: 180px;
   }
-  .avatar {
-    width: 80px;
-    height: 80px;
-  }
-  .info h3 {
+  .card-title {
     font-size: 1rem;
+    padding: 4px 8px;
   }
-  .info .role {
-    font-size: 0.9rem;
+  .card-text {
+    font-size: 18px;
+    padding: 0.4rem 0.8rem;
   }
-  .info .email {
-    font-size: 0.8rem;
-  }
-  .chart-title {
+  .title {
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    max-width: 90%;
+    margin-top: 5vh;
+  }
+  .subtitle {
+    font-size: 1rem;
+    max-width: 90%;
   }
 }
 </style>

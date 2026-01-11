@@ -1,11 +1,11 @@
 <script>
-import fouleesImg from '../assets/foulees.png'
+import ucialImg from '../assets/ucial.png'
 
 export default {
   name: 'Footer',
   data() {
     return {
-      fouleesImg
+      ucialImg
     }
   }
 }
@@ -16,9 +16,9 @@ export default {
     <v-container>
       <v-row class="footer-row" align="center" justify="space-between">
 
-        <!-- Section 1: Suivez-nous -->
+        <!-- Section 1: Suivez-moi -->
         <v-col class="footer-col text-left">
-          <h4 class="white--text">Suivez-nous</h4>
+          <h4 class="white--text">Suivez-moi</h4>
           <v-btn
             icon
             href="https://www.facebook.com/people/TeamVal-EureTriathlon/100063858311946/"
@@ -39,12 +39,12 @@ export default {
 
         <!-- Section 2: Partenaire -->
         <v-col class="footer-col text-center">
-          <h4 class="white--text">Notre partenaire</h4>
-          <a href="https://foulees.com/-louviers-" target="_blank">
+          <h4 class="white--text">Membre de l'UCIAL de Gaillon</h4>
+          <a href="https://www.facebook.com/profile.php?id=61574893705233" target="_blank">
             <v-img
-              :src="fouleesImg"
-              alt="Partenaire Foulées"
-              max-width="120"
+              :src="ucialImg"
+              alt="UCIAL Gaillon"
+              max-width="70"
               class="mx-auto hover-zoom"
               contain
             />

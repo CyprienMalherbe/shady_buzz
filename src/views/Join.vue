@@ -20,7 +20,7 @@ export default {
           <li>🟢 Animateur passionné pour une ambiance garantie</li>
         </ul>
         <br>
-        Contactez-nous dès maintenant pour réserver votre animation !
+        Contactez-moi dès maintenant pour réserver votre animation !
       </v-card-text>
       <v-card-actions>
         <v-btn
@@ -65,6 +65,7 @@ export default {
   text-align: justify;
   text-justify: inter-word;
   line-height: 1.5;
+  font-weight: bold;
 }
 
 /* Bullet points */
@@ -74,7 +75,7 @@ export default {
 }
 .advantages li {
   margin: 0.4rem 0;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 /* Bouton CTA */

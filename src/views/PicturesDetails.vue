@@ -1,11 +1,11 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { useResultsStore } from '@/stores/results'
+import { usePicturesStore } from '@/stores/pictures'
 
 const route = useRoute()
-const resultsStore = useResultsStore()
-const card = resultsStore.getBySlug(route.params.slug)
+const picturesStore = usePicturesStore()
+const card = picturesStore.getBySlug(route.params.slug)
 
 const subtitles = computed(() => {
   if (!card) return []
@@ -45,7 +45,7 @@ const subtitles = computed(() => {
 }
 
 .title {
-  margin-top: 7vh;
+  margin-top: 5vh;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
@@ -69,7 +69,7 @@ const subtitles = computed(() => {
 }
 
 .image {
-  max-width: 70vw;
+  max-width: 40vw;
   width: 100%;
   height: auto;
   border-radius: 10px;

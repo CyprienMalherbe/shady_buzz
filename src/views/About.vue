@@ -1,46 +1,46 @@
 <script>
 export default {
-  name: 'Adults',
+  name: 'About',
 }
 </script>
 
 <template>
   <div class="container">
-    <h1 class="title">Bienvenue au TVT</h1>
-    <p class="subtitle">Envie de nager, pédaler et courir dans la joie et la
-      bonne humeur ? Que vous soyez novice ou triathlète chevronné, rejoignez la grande famille
-      du TVT ! Chez nous, l'essentiel est de prendre du plaisir. C'est pourquoi nous vous proposons des
-      entraînements pour tous les niveaux, à suivre selon vos envies.
-    </p>
+    <h1 class="title">Qui suis-je ?</h1>
+
     <p class="subtitle">
-      Mesdames, n'hésitez plus ! Avec 23 % de femmes, notre club est l'un des plus féminins de la région.
-      C'est le moment de nous rejoindre et partager des moments sportifs et festifs !
+      À force de passion, de temps consacré et d’investissements dans du matériel d’animation,
+      mon entourage n’a cessé de m’encourager à me lancer. Il se ressentait clairement que
+      j’y prenais goût et que cette activité me faisait vibrer.
     </p>
+
     <p class="subtitle">
-      Tout au long de l'année, nous organisons un stage pour adultes pour progresser ensemble. Pour ceux
-      qui ont la fibre compétitrice, le club est fier d'aligner des équipes Hommes et Femmes en Grand Prix.
+      Ainsi, en tant que bonne résolution pour 2026 et du haut de mes 35 ans,
+      j’ai décidé de me lancer dans cette aventure. Une aventure qui m’emmènera là où elle doit m’emmener,
+      avec l’envie de durer… et surtout de m’amuser autant que vous 😊.
     </p>
-    <img class="image" src="@/assets/adults-section.jpg" alt="Adultes TVT">
-    <p class="subtitle">Curieux de découvrir le triathlon avec
-      nous ? Nous vous invitons à participer à
-      une séance d'essai gratuite pour vous
-      familiariser avec le club et les
-      entraînements. Notez bien la date : la reprise est fixée
-      au <span class="important-date">lundi 22 septembre</span>.
-    </p>
+
+    <h1 class="second-title">Pourquoi « SHADY BUZZ » ?</h1>
+
     <p class="subtitle">
-      N'hésitez pas à aller faire un tour dans nos différentes rubriques, et notamment
-      la rubrique <RouterLink to="/training" class="link">Créneaux</RouterLink> pour connaître les horaires d'entraînements
+      <strong>SHADY</strong> est mon surnom depuis de nombreuses années,
+      inspiré du rappeur <strong>Eminem</strong>, dont j’étais fan dans ma jeunesse.
+      Quant à <strong>BUZZ</strong>… disons que cela vient peut-être d’un léger manque
+      d’inspiration sur le moment 😊 — mais surtout d’un clin d’œil évident aux buzzers
+      et à l’univers de l’animation.
+    </p>
+
+    <img class="image" src="@/assets/myself.jpeg" alt="Photo de l'animateur SHADY BUZZ">
+
+    <p class="subtitle">
+      N’hésitez pas à parcourir les différentes rubriques du site, et notamment
+      la section <RouterLink to="/pictures" class="link">Galerie</RouterLink>,
+      pour vous faire une idée de l’ambiance et de l’univers proposés 😊.
     </p>
   </div>
 </template>
 
 <style scoped>
-.important-date {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
 .link {
   font-weight: bold;
   text-decoration: underline;
@@ -61,8 +61,9 @@ export default {
   padding: 1rem;
 }
 
-.title {
-  margin-top: 7vh;
+.title,
+.second-title {
+  margin-top: 4vh;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
@@ -78,17 +79,18 @@ export default {
 }
 
 .image {
-  max-width: 70vw;
+  max-width: 16vw;
   width: 100%;
-  height: auto;
+  max-height: 45vh;
   border-radius: 10px;
   margin-top: 1vh;
-  margin-bottom: 8vh;
+  margin-bottom: 4vh;
 }
 
-/* Responsive mobile */
+/* Mobile */
 @media (max-width: 768px) {
-  .title {
+  .title,
+  .second-title {
     font-size: 1.5rem;
     max-width: 90%;
     margin-top: 5vh;
