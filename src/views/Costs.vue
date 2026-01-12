@@ -63,17 +63,17 @@ export default {
 
       <p class="subtitle">
         <strong>Formule « classique »</strong> :
-        4 jeux avec 3 pauses, pour une durée d’animation d’environ 2 heures.
+        4 jeux avec 3 pauses, pour une durée d’animation d’environ 2 heures (hors installation / désinstallation).
       </p>
 
       <p class="subtitle">
         <strong>Formule « classique longue »</strong> :
-        6 jeux avec 5 pauses, pour une durée d’animation d’environ 3 heures.
+        6 jeux avec 5 pauses, pour une durée d’animation d’environ 3 heures (hors installation / désinstallation).
       </p>
 
       <p class="subtitle">
-        Ces formules comprennent le déplacement standard (dans un rayon de 20 km),
-        le temps d’installation, ainsi que l’animation sur place.
+        Les tarifs indiqués comprennent (en plus de l'animation) l'installation, la désinstallation,
+        et le déplacement standard (dans un rayon de 20 km).
       </p>
 
       <p class="subtitle">

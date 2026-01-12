@@ -10,7 +10,7 @@ export default {
 
     <p class="subtitle">
       À force de passion, de temps consacré et d’investissements dans du matériel d’animation,
-      mon entourage n’a cessé de m’encourager à me lancer. Il se ressentait clairement que
+      mon entourage n’a cessé de m’encourager à franchir le pas. Il se ressentait clairement que
       j’y prenais goût et que cette activité me faisait vibrer.
     </p>
 

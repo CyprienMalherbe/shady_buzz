@@ -40,7 +40,7 @@ export default {
         <!-- Section 2: Partenaire -->
         <v-col class="footer-col text-center">
           <h4 class="white--text">Membre de l'UCIAL de Gaillon</h4>
-          <a href="https://www.facebook.com/profile.php?id=61574893705233" target="_blank">
+          <a href="https://www.facebook.com/profile.php?id=61586407293723" target="_blank">
             <v-img
               :src="ucialImg"
               alt="UCIAL Gaillon"

@@ -4,6 +4,7 @@ import picturesImg from '@/assets/pictures.jpg'
 import contactImg from '@/assets/contact.jpg'
 import costsImg from '@/assets/costs.jpg'
 import testimoniesImg from '@/assets/testimonies.jpg'
+import servicesImg from '@/assets/services.png'
 
 export default {
   name: 'Presentation',
@@ -11,6 +12,7 @@ export default {
     return {
       cards: [
         { title: 'À propos', image: aboutImg, route: 'about' },
+        { title: 'Prestations', image: servicesImg, route: 'services' },
         { title: 'Galerie', image: picturesImg, route: 'pictures' },
         { title: 'Tarifs', image: costsImg, route: 'costs' },
         { title: 'Témoignages', image: testimoniesImg, route: 'testimonies' },

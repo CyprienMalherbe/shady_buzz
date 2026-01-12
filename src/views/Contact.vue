@@ -86,7 +86,7 @@ export default {
           <v-textarea
             v-model="message"
             :rules="messageRules"
-            label="Votre message"
+            label="Votre message (Type d'événement, nb personnes, lieu...)"
             rows="6"
             outlined
             prepend-inner-icon="mdi-message-text"
