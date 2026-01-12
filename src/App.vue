@@ -104,7 +104,7 @@ export default {
 
 <style scoped>
 .logo-img {
-  height: 70px;
+  height: 50px;
   width: auto;
 }
 
