@@ -23,7 +23,8 @@ export default {
 
 <style scoped>
 .home {
-  height: 150vh;
+  min-height: 150vh;
+  height: auto;
   background-image: url('@/assets/logo-with-beard-and-hand.png');
   background-size: 50%;
   background-position: center;
