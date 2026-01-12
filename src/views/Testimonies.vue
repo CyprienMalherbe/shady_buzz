@@ -42,7 +42,7 @@ export default {
 
 <template>
   <div class="container">
-    <h1 class="title">Ils ont aimé</h1>
+    <h1 class="title">Ils ont aimé !</h1>
     <div class="carousel">
       <v-card
         v-for="(t, index) in testimonies"

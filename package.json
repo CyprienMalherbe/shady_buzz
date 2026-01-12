@@ -1,5 +1,5 @@
 {
-  "name": "project-for-tvt",
+  "name": "shady-buzz",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -8,8 +8,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "deploy": "gh-pages -d dist",
     "build": "vite build",
+    "predeploy": "echo shadybuzz27.com > dist/CNAME",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "test:unit": "vitest",
     "lint": "eslint . --fix"
