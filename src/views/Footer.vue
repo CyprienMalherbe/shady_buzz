@@ -21,7 +21,7 @@ export default {
           <h4 class="white--text">Suivez-moi</h4>
           <v-btn
             icon
-            href="https://www.facebook.com/people/TeamVal-EureTriathlon/100063858311946/"
+            href="https://www.facebook.com/profile.php?id=61586407293723"
             target="_blank"
             class="white--text hover-zoom"
           >
@@ -29,7 +29,7 @@ export default {
           </v-btn>
           <v-btn
             icon
-            href="https://www.instagram.com/teamvaleuretriathlon.off/"
+            href="https://www.instagram.com/shadybuzz27/"
             target="_blank"
             class="white--text hover-zoom"
           >
@@ -40,7 +40,7 @@ export default {
         <!-- Section 2: Partenaire -->
         <v-col class="footer-col text-center">
           <h4 class="white--text">Membre de l'UCIAL de Gaillon</h4>
-          <a href="https://www.facebook.com/profile.php?id=61586407293723" target="_blank">
+          <a href="https://www.facebook.com/profile.php?id=61574893705233" target="_blank">
             <v-img
               :src="ucialImg"
               alt="UCIAL Gaillon"
