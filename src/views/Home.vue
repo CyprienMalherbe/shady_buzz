@@ -1,6 +1,6 @@
 <script>
 import Presentation from './Presentation.vue'
-import Join from './Join.vue';
+import Join from './Join.vue'
 
 export default {
   name: 'Home',
