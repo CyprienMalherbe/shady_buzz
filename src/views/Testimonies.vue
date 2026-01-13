@@ -78,7 +78,7 @@ export default {
         </v-btn>
       </div>
     </div>
-      <p class="subtitle">J'espère avoir plus de témoignages à l'avenir 😊.</p>
+      <p class="subtitle"> On a déjà eu l'occasion de jouer ensemble ? N'hésitez pas à <a class="contact-link" href="https://forms.gle/RGyr2HqFw6i2qWnz8" target="_blank">me faire un retour</a> 😊.</p>
   </div>
 </template>
 
@@ -91,6 +91,13 @@ export default {
   width: 100%;
   padding: 2rem 0;
   margin-top: 7vh;
+}
+
+.contact-link {
+  color: #4fc3f7;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .subtitle {
