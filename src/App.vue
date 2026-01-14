@@ -129,6 +129,9 @@ export default {
 
 /* Positionnement sur mobile : hamburger à gauche, logo à droite */
 @media (max-width: 768px) {
+  .logo-link {
+    display: none;
+  }
   .v-app-bar .v-row {
     justify-content: space-between;
   }
