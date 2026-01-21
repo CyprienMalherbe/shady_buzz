@@ -56,6 +56,9 @@ export default {
           <p class="developped-by">
             Ce site a été développé par Cyprien Malherbe, développeur web
           </p>
+          <p class="developped-by">
+            N° SIRET : 10010689700018
+          </p>
         </v-col>
 
       </v-row>
