@@ -54,7 +54,7 @@ export default {
         <!-- Section 3: Droite -->
         <v-col class="footer-col text-right">
           <p class="developped-by">
-            ☎️ 06 60 83 22 83
+            ☎️ 06 67 84 85 22
           </p>
           <p class="developped-by">
             📧 shadybuzz27@gmail.com
