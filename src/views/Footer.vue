@@ -54,6 +54,12 @@ export default {
         <!-- Section 3: Droite -->
         <v-col class="footer-col text-right">
           <p class="developped-by">
+            ☎️ 06 60 83 22 83
+          </p>
+          <p class="developped-by">
+            📧 shadybuzz27@gmail.com
+          </p>
+          <p class="developped-by">
             N° SIRET : 10010689700018
           </p>
           <p class="developped-by">

@@ -1,16 +1,12 @@
 <script>
-import classicaFormulaImg from '@/assets/classica-formula.jpg'
-import classicaFormulaLongImg from '@/assets/classica-formula-long.jpg'
-import personnalizedFormulaImg from '@/assets/personnalized-formula.jpg'
-
 export default {
   name: 'Costs',
   data () {
     return {
-      cards: [
-        { title: "Formule 'classique'", text: '200€', image: classicaFormulaImg },
-        { title: "Formule 'classique longue'", text: '250€', image: classicaFormulaLongImg },
-        { title: 'Formule personnalisée (durée et / ou thèmes)', text: 'À discuter ensemble', image: personnalizedFormulaImg },
+      formulas: [
+        { title: "Formule 'classique'", price: '200 €' },
+        { title: "Formule 'classique longue'", price: '250 €' },
+        { title: 'Formule personnalisée (durée et / ou thèmes)', price: 'À convenir ensemble' },
       ],
     }
   },
@@ -19,7 +15,7 @@ export default {
 
 <template>
   <div class="container">
-    <h1 class="title">Mes tarifs</h1>
+    <h1 class="title">Les tarifs</h1>
 
     <p class="subtitle">
       Ma force réside dans ma capacité à adapter la durée des jeux, les thèmes,
@@ -40,53 +36,55 @@ export default {
       de vous faire une première idée.
     </p>
 
-    <div class="cards-section">
-      <v-card
-        v-for="card in cards"
-        :key="card.title"
-        class="card"
-        color="blue"
-        variant="elevated"
-        rounded="xl"
-        :image="card.image"
-      >
-        <v-card-title class="card-title">{{ card.title }}</v-card-title>
-        <div class="card-text">{{ card.text }}</div>
-      </v-card>
-    </div>
-      <h1 class="title">Les formules</h1>
+    <!-- Nouvelle liste -->
+    <ul class="formula-list">
+      <li v-for="formula in formulas" :key="formula.title" class="formula-item">
+        <span class="formula-title">{{ formula.title }}</span>
+        <span class="formula-price">{{ formula.price }}</span>
+      </li>
+    </ul>
 
-      <p class="subtitle">
-        Globalement, je propose des animations composées de plusieurs manches,
-        avec l’ensemble du matériel nécessaire.
-      </p>
+    <h1 class="title">Les formules</h1>
 
-      <p class="subtitle">
-        <strong>Formule « classique »</strong> :
-        4 jeux avec 3 pauses, pour une durée d’animation d’environ 2 heures (hors installation / désinstallation).
-      </p>
+    <p class="subtitle">
+      Globalement, je propose des animations composées de plusieurs manches,
+      avec l’ensemble du matériel nécessaire.
+    </p>
 
-      <p class="subtitle">
-        <strong>Formule « classique longue »</strong> :
-        6 jeux avec 5 pauses, pour une durée d’animation d’environ 3 heures (hors installation / désinstallation).
-      </p>
+    <p class="subtitle">
+      <strong>Formule « classique »</strong> :
+      4 jeux avec 3 pauses, pour une durée d’animation d’environ 2 heures (hors installation / désinstallation).
+    </p>
 
-      <p class="subtitle">
-        Les tarifs indiqués comprennent (en plus de l'animation) l'installation, la désinstallation,
-        et le déplacement standard (dans un rayon de 20 km).
-      </p>
+    <p class="subtitle">
+      <strong>Formule « classique longue »</strong> :
+      6 jeux avec 5 pauses, pour une durée d’animation d’environ 3 heures (hors installation / désinstallation).
+    </p>
 
-      <p class="subtitle">
-        L’animation « classique » correspond à une sélection de jeux prédéfinis.
-        En cas de personnalisation plus poussée (thèmes spécifiques, formats particuliers,
-        contraintes spécifiques), une formule personnalisée sera proposée.
-      </p>
+    <p class="subtitle">
+      Les tarifs indiqués comprennent (en plus de l'animation) l'installation, la désinstallation,
+      et le déplacement standard (dans un rayon de 20 km).
+    </p>
+
+    <p class="subtitle">
+      L’animation « classique » correspond à une sélection de jeux prédéfinis.
+      En cas de personnalisation plus poussée (thèmes spécifiques, formats particuliers,
+      contraintes spécifiques), une formule personnalisée sera proposée.
+    </p>
 
   </div>
 </template>
 
 <style scoped>
-  .contact-link {
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-link {
   color: #4fc3f7;
   font-weight: bold;
   text-decoration: underline;
@@ -98,7 +96,7 @@ export default {
 }
 
 .title {
-  margin-top: 7vh;
+  margin-top: 3vh;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
@@ -115,98 +113,37 @@ export default {
   text-align: center;
 }
 
-.container {
+/* Liste stylée */
+.formula-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.formula-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-}
-
-.cards-section {
-  margin-top: 4vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  justify-items: center;
-  width: 100%;
-}
-
-.card {
-  position: relative;
-  width: 100%;
-  max-width: 25vw;
-  min-width: 250px;
-  min-height: 150px;
-  height: 25vh;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-}
-
-.card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.card-title {
+  justify-content: space-between;
+  background: rgba(255,255,255,0.1);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  color: white;
   font-size: 1.2rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: white;
-  background: rgba(0,0,0,0.4);
-  text-align: center;
-  padding: 5px 10px;
-  z-index: 2;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.card-text {
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  font-size: 24px;
-  color: white;
-  background: rgba(0,0,0,0.5);
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 3;
+.formula-title {
+  font-weight: bold;
 }
 
-.card:hover .card-text {
-  opacity: 1;
+.formula-price {
+  font-style: italic;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .cards-section {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 0 1rem;
-  }
-  .card {
-    max-width: 100%;
-    height: auto;
-    min-height: 180px;
-  }
-  .card-title {
-    font-size: 1rem;
-    padding: 4px 8px;
-  }
-  .card-text {
-    font-size: 18px;
-    padding: 0.4rem 0.8rem;
-  }
   .title {
     font-size: 1.5rem;
     max-width: 90%;
@@ -215,6 +152,14 @@ export default {
   .subtitle {
     font-size: 1rem;
     max-width: 90%;
+  }
+  .formula-item {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+  }
+  .formula-price {
+    margin-top: 0.3rem;
   }
 }
 </style>
