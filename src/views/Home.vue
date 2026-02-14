@@ -1,14 +1,12 @@
 <script>
 import Presentation from './Presentation.vue'
 import Join from './Join.vue'
-import Exception from './Exception.vue'
 
 export default {
   name: 'Home',
   components: {
     Presentation,
     Join,
-    Exception,
   },
 }
 </script>
@@ -17,8 +15,6 @@ export default {
   <div class="home">
     <div class="spacer"></div>
     <div class="overlay-content">
-      <Exception />
-      <div class="spacer"></div>
       <Join />
       <div class="spacer"></div>
       <Presentation />
