@@ -21,14 +21,29 @@ const subtitles = computed(() => {
   <div v-if="card">
     <div class="container">
       <h1 class="title">{{ card.title }}</h1>
+
       <p class="subtitle">{{ card.subtitle1 }}</p>
-      <img class="image" :src="card.image" alt="" />
+
+      <img v-if="card.images?.length" class="image" :src="card.images[0]" alt="" />
+
       <p
         v-for="(subtitle, index) in subtitles"
         :key="index"
         class="subtitle"
         v-html="subtitle"
       ></p>
+
+      <div v-if="card.images?.length > 1" class="gallery">
+        <h2 class="gallery-title">Plus de photos</h2>
+        <div class="gallery-grid">
+          <img
+            v-for="(img, idx) in card.images.slice(1)"
+            :key="idx"
+            :src="img"
+            class="gallery-item"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -77,12 +92,45 @@ const subtitles = computed(() => {
   margin-bottom: 8vh;
 }
 
+.gallery {
+  margin-top: 4rem;
+  width: 100%;
+  max-width: 80vw;
+}
+
+.gallery-title {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Pour que les images aient toutes la même taille proprement */
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.02);
+}
+
 /* Responsive mobile */
 @media (max-width: 768px) {
   .title {
     font-size: 1.5rem;
     max-width: 90%;
     margin-top: 5vh;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
   }
 
   .subtitle {
