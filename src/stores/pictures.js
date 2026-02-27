@@ -8,6 +8,8 @@ import chercheBistrotDuClocherImg from '@/assets/chercheBistrotDuClocher.jpeg'
 import fullRoomBistrotDuClocherImg from '@/assets/fullRoomBistrotDuClocher.jpg'
 import presentationBistrotDuClocherImg from '@/assets/presentationBistrotDuClocher.jpeg'
 import shadyBuzzBistrotDuClocherImg from '@/assets/shadyBuzzBistrotDuClocher.jpeg'
+import giveBistrotDuClocherImg from '@/assets/give-bistrot-du-clocher.jpeg'
+import laughsBistrotDuClocherImg from '@/assets/laughs-bistrot-du-clocher.jpeg'
 
 function slugify(text) {
   return text
@@ -73,7 +75,7 @@ export const usePicturesStore = defineStore('pictures', {
       },
       {
         title: "Animation au bistrot du clocher",
-        images: [presentationBistrotDuClocherImg, shadyBuzzBistrotDuClocherImg, fullRoomBistrotDuClocherImg, chercheBistrotDuClocherImg],
+        images: [presentationBistrotDuClocherImg, laughsBistrotDuClocherImg, shadyBuzzBistrotDuClocherImg, fullRoomBistrotDuClocherImg, chercheBistrotDuClocherImg, giveBistrotDuClocherImg],
         published: new Date("2026-02-20T03:24:00"),
         subtitle1: "C'était la première en tant que professionnel, et quelle première ! Tout le monde était satisfait et en redemandait.",
         subtitle2: "Au programme : Quiz de culture générale, jeux de logique faciale et 'famille en carton', on a même pu terminer sur un petit karaoké.",
