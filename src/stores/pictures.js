@@ -1,9 +1,4 @@
 import { defineStore } from 'pinia'
-import newYearDay from '@/assets/new-year-day.jpg'
-import birthdayRachel from '@/assets/birthday-rachel.jpg'
-import friendsImg from '@/assets/friends.jpg'
-import seminaireImg from '@/assets/seminaire.jpg'
-import sportImg from '@/assets/sport.jpg'
 import chercheBistrotDuClocherImg from '@/assets/chercheBistrotDuClocher.jpeg'
 import fullRoomBistrotDuClocherImg from '@/assets/fullRoomBistrotDuClocher.jpg'
 import presentationBistrotDuClocherImg from '@/assets/presentationBistrotDuClocher.jpeg'
@@ -15,6 +10,11 @@ import CourcellesAll from '@/assets/Courcelles-all.png'
 import CourcellesMe from '@/assets/Courcelles-me.png'
 import CourcellesSong from '@/assets/Courcelles-song.png'
 import NewsPaper from '@/assets/newspaper.jpeg'
+import ParvisMars1 from '@/assets/parvis-debut-mars-2026-1.jpeg'
+import ParvisMars2 from '@/assets/parvis-debut-mars-2026-2.jpeg'
+import ParvisMars3 from '@/assets/parvis-debut-mars-2026-3.jpeg'
+import ParvisMars4 from '@/assets/parvis-debut-mars-2026-4.jpeg'
+import ParvisMars from '@/assets/parvis-debut-mars-2026.jpeg'
 
 function slugify(text) {
   return text
@@ -29,55 +29,6 @@ function slugify(text) {
 export const usePicturesStore = defineStore('pictures', {
   state: () => ({
     cards: [
-      {
-        title: "Jour de l'an 2025 - 2026",
-        images: [newYearDay],
-        published: new Date("2026-01-01T03:24:00"),
-        subtitle1: "Le jour de l'an 2025 - 2026 a été fêté avec une quarataine de convives dans la salle des fêtes de saint-Pierre-d'Autils, durant lequel j'ai animé 4 jeux divers et variés (Quiz, Qui est-ce ?, Ça ne nous rajeunit pas, Au plus proche), au goût de tous.",
-        subtitle2: "Cette section manque quand même encore un peu de photos 😊.",
-      },
-      {
-        title: "Anniversaire de Rachel",
-        images: [birthdayRachel],
-        published: new Date("2025-11-18T03:24:00"),
-        subtitle1: "Les 20 ans de Rachel ont été fêtés comme il se doit autour de 4 jeux différents chez elle (Risque-tout, Jeu des icônes, Première lettre, Cliptomane).",
-        subtitle2: "Cette section manque quand même encore un peu de photos 😊.",
-      },
-      {
-        title: "Anniversaire de Michel",
-        images: [birthdayRachel],
-        published: new Date("2024-12-10T03:24:00"),
-        subtitle1: "Les 58 ans de Michel ont été fêtés comme il se doit autour de 3 jeux différents à son domicile (Risque-tout, Jeu visuel et mot commun).",
-        subtitle2: "Cette section manque quand même encore un peu de photos 😊.",
-      },
-      {
-        title: "Animation club de sport",
-        images: [sportImg],
-        published: new Date("2025-04-24T03:24:00"),
-        subtitle1: "Le club de triathlon de Gaillon a pu bénéficier de 4 jeux faits maison pour cette occasion (Risque-tout, Anagrammes personnalisés, Résumés en une phrase, Cristaline)",
-        subtitle2: "Cette section manque quand même encore un peu de photos 😊.",
-      },
-      {
-        title: "Anniversaire de Clément",
-        images: [birthdayRachel],
-        published: new Date("2024-09-17T03:24:00"),
-        subtitle1: `Un BNB avait été loué pour l'occasion : les 30 ans de Clément ont été une source de bonne joie et de franche rigolade sur les thèmes de l'Olympique Lyonnais et de l'intersubjectivité`,
-        subtitle2: "Cette section manque quand même encore un peu de photos 😊.",
-      },
-      {
-        title: "Retrouvailles entre amis",
-        images: [friendsImg],
-        published: new Date("2025-11-11T03:24:00"),
-        subtitle1: "Des amis ont loué un BNB pour l'occasion : 4 jeux ont été proposés pour animer une partie de leux week-end : Quiz culture G., Blind test, Anagrammes personnalisés, Famille en carton",
-        subtitle2: "Cette section manque quand même encore un peu de photos 😊.",
-      },
-      {
-        title: "Séminaire",
-        images: [seminaireImg],
-        published: new Date("2025-09-08T03:24:00"),
-        subtitle1: "Pour une cohésion d'équipe et un moment quelque peu compétitif mais très sympa, 3 jeux ont été proposés dans les locaux de l'entreprise : Quiz culture G., ShakiRammstein et Anagrammes",
-        subtitle2: "Cette section manque quand même encore un peu de photos 😊.",
-      },
       {
         title: "Animation au bistrot du clocher",
         images: [presentationBistrotDuClocherImg, laughsBistrotDuClocherImg, shadyBuzzBistrotDuClocherImg, fullRoomBistrotDuClocherImg, chercheBistrotDuClocherImg, giveBistrotDuClocherImg],
@@ -102,6 +53,13 @@ export const usePicturesStore = defineStore('pictures', {
         published: new Date("2026-02-27T03:23:00"),
         subtitle1: "Shady Buzz entre dans le patrimoine local, bon d'accord pas encore mais c'est un bon début pour une entreprise qui s'est lancée il y a à peine 1 mois. Une petite fierté quand même 😊.",
         subtitle2: "Merci à Isabelle pour l'article 😊.",
+      },
+      {
+        title: "Soirée quiz au Parvis",
+        images: [ParvisMars, ParvisMars1, ParvisMars2, ParvisMars3, ParvisMars4],
+        published: new Date("2026-03-06T03:23:00"),
+        subtitle1: "Shady Buzz a fait ses premières sur Louviers. Merci à la brasserie du Parvis pour cette belle opportunité.",
+        subtitle2: "Tout le monde a bien apprécié l'ambiance et est prêt à remettre le couvert, qui aura lieu à la fin du mois 😉.",
       },
     ],
   }),
