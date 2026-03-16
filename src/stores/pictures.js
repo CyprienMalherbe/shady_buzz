@@ -15,6 +15,10 @@ import ParvisMars2 from '@/assets/parvis-debut-mars-2026-2.jpeg'
 import ParvisMars3 from '@/assets/parvis-debut-mars-2026-3.jpeg'
 import ParvisMars4 from '@/assets/parvis-debut-mars-2026-4.jpeg'
 import ParvisMars from '@/assets/parvis-debut-mars-2026.jpeg'
+import ROCEMS1 from '@/assets/ROCEMS-1.jpeg'
+import ROCEMS2 from '@/assets/ROCEMS-2.jpeg'
+import ROCEMS3 from '@/assets/ROCEMS-3.jpeg'
+import ROCEMS4 from '@/assets/ROCEMS-4.jpeg'
 
 function slugify(text) {
   return text
@@ -60,6 +64,13 @@ export const usePicturesStore = defineStore('pictures', {
         published: new Date("2026-03-06T03:23:00"),
         subtitle1: "Shady Buzz a fait ses premières sur Louviers. Merci à la brasserie du Parvis pour cette belle opportunité.",
         subtitle2: "Tout le monde a bien apprécié l'ambiance et est prêt à remettre le couvert, qui aura lieu à la fin du mois 😉.",
+      },
+      {
+        title: "Soirée quiz avec les ROC'EMS",
+        images: [ROCEMS1, ROCEMS2, ROCEMS3, ROCEMS4],
+        published: new Date("2026-03-14T03:23:00"),
+        subtitle1: "Shady Buzz a animé des jeux pour la soirée annuelle des ROC'EMS, à l'occasion de France - Angleterre au rugby.",
+        subtitle2: "Tout s'est excellement bien passé, vu que les convives étaient ravis des jeux proposés, et qu'en plus les Bleus ont gagné 😉.",
       },
     ],
   }),
