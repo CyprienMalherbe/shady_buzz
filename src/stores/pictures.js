@@ -19,6 +19,9 @@ import ROCEMS1 from '@/assets/ROCEMS-1.jpeg'
 import ROCEMS2 from '@/assets/ROCEMS-2.jpeg'
 import ROCEMS3 from '@/assets/ROCEMS-3.jpeg'
 import ROCEMS4 from '@/assets/ROCEMS-4.jpeg'
+import KPlusUn1 from '@/assets/k-plus-un-1.jpeg'
+import KPlusUn2 from '@/assets/k-plus-un-2.jpeg'
+import KPlusUn3 from '@/assets/k-plus-un-3.jpeg'
 
 function slugify(text) {
   return text
@@ -71,6 +74,13 @@ export const usePicturesStore = defineStore('pictures', {
         published: new Date("2026-03-14T03:23:00"),
         subtitle1: "Shady Buzz a animé des jeux pour la soirée annuelle des ROC'EMS, à l'occasion de France - Angleterre au rugby.",
         subtitle2: "Tout s'est excellement bien passé, vu que les convives étaient ravis des jeux proposés, et qu'en plus les Bleus ont gagné 😉.",
+      },
+      {
+        title: "Soirée quiz au K+1 restaurant inclusif à Vernon",
+        images: [KPlusUn3, KPlusUn1, KPlusUn2],
+        published: new Date("2026-03-20T03:23:00"),
+        subtitle1: "Shady Buzz aux avant-postes pendant le repas de 7 tables lors de la soirée au K+1 - restaurant inclusif à Vernon.",
+        subtitle2: "Les convives ont pu découvrir les joies de la merveilleuse gastronomie offerte pendant l'animation de 4 jeux différents qui ont fait appel à des qualités de reconnaissance faciale, de rapidité et de stratégie 😉.",
       },
     ],
   }),
