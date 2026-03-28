@@ -29,6 +29,10 @@ import laBase014 from "@/assets/la-base-01-4.jpeg";
 import laBase015 from "@/assets/la-base-01-5.jpeg";
 import laBase016 from "@/assets/la-base-01-6.jpeg";
 import laBase017 from "@/assets/la-base-01-7.jpeg";
+import parvis21 from "@/assets/parvis-2-1.jpg";
+import parvis22 from "@/assets/parvis-2-2.jpg";
+import parvis23 from "@/assets/parvis-2-3.jpg";
+import parvis24 from "@/assets/parvis-2-4.jpg";
 
 function slugify(text) {
   return text
@@ -138,6 +142,15 @@ export const usePicturesStore = defineStore("pictures", {
           "Inoubliable soirée à La Base à Vernon, qui n'est que la première d'une longue soirée a priori 😉.",
         subtitle2:
           "Tout le monde s'est pris aux différents jeux dans la joie et le bon humour. On a même poussé la chansonnette un moment, tout ça autour de la belle carte proposée par la patronne Caro, que je remercie pour l'opportunité. Hâte de vous retrouver tous 😊.",
+      },
+      {
+        title: "Soirée Blindtest à Louviers",
+        images: [parvis24, parvis22, parvis23, parvis21],
+        published: new Date("2026-03-27T03:23:00"),
+        subtitle1:
+          "Soirée full Blindtest à la brasserie du Parvis à Louviers ce vendredi soir : 4 thèmes différents ont été proposés, qui ont ravi tous les joueurs.",
+        subtitle2:
+          "Heureusement qu'on a tout le week-end pour nous remettre des émotions de cette soirée fort sympathique, même si on perd une heure de samedi à dimanche 😭.",
       },
     ],
   }),
