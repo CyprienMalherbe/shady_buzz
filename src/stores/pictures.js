@@ -33,6 +33,9 @@ import parvis21 from "@/assets/parvis-2-1.jpg";
 import parvis22 from "@/assets/parvis-2-2.jpg";
 import parvis23 from "@/assets/parvis-2-3.jpg";
 import parvis24 from "@/assets/parvis-2-4.jpg";
+import laBase021 from "@/assets/la-base-02-1.jpg";
+import laBase022 from "@/assets/la-base-02-2.jpg";
+import laBase023 from "@/assets/la-base-02-3.jpg";
 
 function slugify(text) {
   return text
@@ -151,6 +154,15 @@ export const usePicturesStore = defineStore("pictures", {
           "Soirée full Blindtest à la brasserie du Parvis à Louviers ce vendredi soir : 4 thèmes différents ont été proposés, qui ont ravi tous les joueurs.",
         subtitle2:
           "Heureusement qu'on a tout le week-end pour nous remettre des émotions de cette soirée fort sympathique, même si on perd une heure de samedi à dimanche 😭.",
+      },
+      {
+        title: "Soirée quiz 2 à La Base à Vernon",
+        images: [laBase022, laBase021, laBase023],
+        published: new Date("2026-04-09T03:23:00"),
+        subtitle1:
+          "Va falloir s'y habituer j'ai l'impression, car cela commence à se savoir qu'il y a de l'animation quiz à La Base à Vernon un jeudi sur 2 désormais 😉.",
+        subtitle2:
+          "Toujours un plaisir d'animer là-bas et de s'amuser ensemble. À dans 2 semaines 😊.",
       },
     ],
   }),
