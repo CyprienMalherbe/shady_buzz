@@ -45,13 +45,48 @@ export default {
       </v-card>
     </div>
   </div>
+  <div class="video-wrapper">
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/EhHw0RPiF68?autoplay=1&mute=1&si=-cuXYFCk6v_gPnei"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
 </template>
 
 <style scoped>
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 70vw;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
 .join-wrapper {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   margin: 2rem 0;
 }
 
