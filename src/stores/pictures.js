@@ -36,6 +36,9 @@ import parvis24 from "@/assets/parvis-2-4.jpg";
 import laBase021 from "@/assets/la-base-02-1.jpg";
 import laBase022 from "@/assets/la-base-02-2.jpg";
 import laBase023 from "@/assets/la-base-02-3.jpg";
+import laBase031 from "@/assets/la-base-03-1.jpeg";
+import laBase032 from "@/assets/la-base-03-2.jpeg";
+import laBase033 from "@/assets/la-base-03-3.jpeg";
 
 function slugify(text) {
   return text
@@ -163,6 +166,15 @@ export const usePicturesStore = defineStore("pictures", {
           "Va falloir s'y habituer j'ai l'impression, car cela commence à se savoir qu'il y a de l'animation quiz à La Base à Vernon un jeudi sur 2 désormais 😉.",
         subtitle2:
           "Toujours un plaisir d'animer là-bas et de s'amuser ensemble. À dans 2 semaines 😊.",
+      },
+      {
+        title: "Soirée quiz 3 à La Base à Vernon",
+        images: [laBase031, laBase032, laBase033],
+        published: new Date("2026-04-24T03:23:00"),
+        subtitle1:
+          "Ça y est ! Certains anciens habitués des quiz au bar reviennent, le bouche à oreilles fait son effet 😊. C'est un plaisir de retrouver des visages connus, à moi d'adapter le contenu pour que la lassitude ne s'installe pas 😊.",
+        subtitle2:
+          "Belle victorie de l'équipe composée de joueurs de rugby de Vernon. À dans 2 semaines j'espère 😊.",
       },
     ],
   }),
