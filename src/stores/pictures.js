@@ -39,6 +39,9 @@ import laBase023 from "@/assets/la-base-02-3.jpg";
 import laBase031 from "@/assets/la-base-03-1.jpeg";
 import laBase032 from "@/assets/la-base-03-2.jpeg";
 import laBase033 from "@/assets/la-base-03-3.jpeg";
+import laBase041 from "@/assets/la-base-04-1.jpeg";
+import laBase042 from "@/assets/la-base-04-2.jpeg";
+import laBase043 from "@/assets/la-base-04-3.jpeg";
 
 function slugify(text) {
   return text
@@ -174,7 +177,16 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle1:
           "Ça y est ! Certains anciens habitués des quiz au bar reviennent, le bouche à oreilles fait son effet 😊. C'est un plaisir de retrouver des visages connus, à moi d'adapter le contenu pour que la lassitude ne s'installe pas 😊.",
         subtitle2:
-          "Belle victorie de l'équipe composée de joueurs de rugby de Vernon. À dans 2 semaines j'espère 😊.",
+          "Belle victoire de l'équipe composée de joueurs de rugby de Vernon. À dans 2 semaines j'espère 😊.",
+      },
+      {
+        title: "Soirée quiz 4 à La Base à Vernon",
+        images: [laBase041, laBase042, laBase043],
+        published: new Date("2026-05-07T03:23:00"),
+        subtitle1:
+          "Énorme plaisir à cette soirée. Au-delà de certains amis et même de certains membres de ma famille qui ont fait le déplacement (depuis Versailles excusez du peu), il y avait quand même 6 équipes présentes, ce qui est un record.",
+        subtitle2:
+          "Au final c'est une fois de plus les joueurs et joueuses de rugby de Vernon qui ont gagné pour la deuxième fois consécutive. Qui pour les détrôner ? La suite dans 2 semaines.",
       },
     ],
   }),
