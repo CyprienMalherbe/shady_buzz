@@ -3,7 +3,7 @@ import aboutImg from '@/assets/about.jpeg'
 import picturesImg from '@/assets/pictures.jpg'
 import contactImg from '@/assets/contact.jpg'
 import costsImg from '@/assets/costs.jpg'
-import testimoniesImg from '@/assets/testimonies.jpg'
+import resultsImg from '@/assets/results.jpg'
 import servicesImg from '@/assets/services.png'
 
 export default {
@@ -15,7 +15,7 @@ export default {
         { title: 'Prestations', image: servicesImg, route: 'services' },
         { title: 'Galerie', image: picturesImg, route: 'pictures' },
         { title: 'Tarifs', image: costsImg, route: 'costs' },
-        { title: 'Témoignages', image: testimoniesImg, route: 'testimonies' },
+        { title: 'Résultats', image: resultsImg, route: 'results' },
         { title: 'Contact', image: contactImg, route: 'contact' },
       ],
     }
