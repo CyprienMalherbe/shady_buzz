@@ -42,6 +42,8 @@ import laBase033 from "@/assets/la-base-03-3.jpeg";
 import laBase041 from "@/assets/la-base-04-1.jpeg";
 import laBase042 from "@/assets/la-base-04-2.jpeg";
 import laBase043 from "@/assets/la-base-04-3.jpeg";
+import laBase051 from "@/assets/la-base-05-1.jpeg";
+import laBase052 from "@/assets/la-base-05-2.jpeg";
 
 function slugify(text) {
   return text
@@ -187,6 +189,15 @@ export const usePicturesStore = defineStore("pictures", {
           "Énorme plaisir à cette soirée. Au-delà de certains amis et même de certains membres de ma famille qui ont fait le déplacement (depuis Versailles excusez du peu), il y avait quand même 6 équipes présentes, ce qui est un record.",
         subtitle2:
           "Au final c'est une fois de plus les joueurs et joueuses de rugby de Vernon qui ont gagné pour la deuxième fois consécutive. Qui pour les détrôner ? La suite dans 2 semaines.",
+      },
+      {
+        title: "Soirée quiz 5 à La Base à Vernon",
+        images: [laBase051, laBase052],
+        published: new Date("2026-05-22T03:23:00"),
+        subtitle1:
+          "Les habitués ont répondu une fois de plus présent pour cette cinquième soirée quiz.",
+        subtitle2:
+          "Merci à eux, bravo à tous, et bon vent Didier ta culture manquera aux quiz 😊.",
       },
     ],
   }),
