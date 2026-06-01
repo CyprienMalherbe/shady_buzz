@@ -44,6 +44,8 @@ import laBase042 from "@/assets/la-base-04-2.jpeg";
 import laBase043 from "@/assets/la-base-04-3.jpeg";
 import laBase051 from "@/assets/la-base-05-1.jpeg";
 import laBase052 from "@/assets/la-base-05-2.jpeg";
+import Guitran01 from "@/assets/guitrancourt-01.jpg";
+import Guitran02 from "@/assets/guitrancourt-02.jpg";
 
 function slugify(text) {
   return text
@@ -193,11 +195,20 @@ export const usePicturesStore = defineStore("pictures", {
       {
         title: "Soirée quiz 5 à La Base à Vernon",
         images: [laBase051, laBase052],
-        published: new Date("2026-05-22T03:23:00"),
+        published: new Date("2026-05-21T03:23:00"),
         subtitle1:
           "Les habitués ont répondu une fois de plus présent pour cette cinquième soirée quiz.",
         subtitle2:
           "Merci à eux, bravo à tous, et bon vent Didier ta culture manquera aux quiz 😊.",
+      },
+      {
+        title: "Soirée quiz à la salle des fêtes de Guitrancourt",
+        images: [Guitran01, Guitran02],
+        published: new Date("2026-05-29T03:23:00"),
+        subtitle1:
+          "Merci à la mairie de Guitrancorut pour cette belle opportunité, c'est toujours avec un poeu de nostalgie que je reviens dans cette belle salle 😊.",
+        subtitle2:
+          "51 personnes, ce n'est quand même pas rien, et à en coire les nombreux retours positifs, les jeux semblent bien adaptés à autant de joueurs 😊.",
       },
     ],
   }),
