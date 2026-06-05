@@ -15,7 +15,7 @@ export default {
         { title: 'Prestations', image: servicesImg, route: 'services' },
         { title: 'Galerie', image: picturesImg, route: 'pictures' },
         { title: 'Tarifs', image: costsImg, route: 'costs' },
-        { title: 'Résultats', image: resultsImg, route: 'results' },
+        { title: 'Résultats La Base', image: resultsImg, route: 'results' },
         { title: 'Contact', image: contactImg, route: 'contact' },
       ],
     }

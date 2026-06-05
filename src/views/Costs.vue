@@ -4,8 +4,8 @@ export default {
   data () {
     return {
       formulas: [
-        { title: "Formule 'classique'", price: '200 €' },
-        { title: "Formule 'classique longue'", price: '250 €' },
+        { title: "Formule 'classique'", price: '250 €' },
+        { title: "Formule 'classique longue'", price: '300 €' },
         { title: 'Formule personnalisée (durée et / ou thèmes)', price: 'À convenir ensemble' },
       ],
     }

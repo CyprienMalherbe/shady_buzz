@@ -18,7 +18,7 @@ export default {
         { text: 'Prestations', route: '/services' },
         { text: 'Galerie', route: '/pictures' },
         { text: 'Tarifs', route: '/costs' },
-        { text: 'Résultats', route: '/results' },
+        { text: 'Résultats La Base', route: '/results' },
       ],
       contact: { text: 'Contact', route: 'contact' },
       activeTab: null,

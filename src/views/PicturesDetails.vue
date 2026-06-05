@@ -7,7 +7,7 @@ const route = useRoute()
 const picturesStore = usePicturesStore()
 const card = picturesStore.getBySlug(route.params.slug)
 
-// État pour l'image agrandie
+// État pour l'image agrandie (Lightbox)
 const selectedImage = ref(null)
 
 const openZoom = (url) => {
@@ -55,12 +55,12 @@ const subtitles = computed(() => {
 
       <div v-if="card.images?.length > 1" class="gallery">
         <h2 class="gallery-title">Plus de photos</h2>
-        <div class="gallery-grid">
+        <div class="gallery-section">
           <img
             v-for="(img, idx) in card.images.slice(1)"
             :key="idx"
             :src="img"
-            class="gallery-item zoom-trigger"
+            class="gallery-image zoom-trigger"
             @click="openZoom(img)"
           />
         </div>
@@ -85,10 +85,11 @@ const subtitles = computed(() => {
   align-items: center;
   text-align: center;
   padding: 1rem;
+  width: 100%;
 }
 
 .title {
-  margin-top: 5vh;
+  margin-top: 7vh;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
@@ -104,14 +105,16 @@ const subtitles = computed(() => {
   white-space: pre-wrap;
 }
 
+/* Image principale du haut */
 .image {
   max-width: 40vw;
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 16px; /* Arrondi uniforme à 16px */
   margin-top: 1vh;
   margin-bottom: 8vh;
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .zoom-trigger {
@@ -119,8 +122,11 @@ const subtitles = computed(() => {
 }
 
 .zoom-trigger:hover {
+  transform: scale(1.03);
   filter: brightness(0.9);
 }
+
+/* --- ADAPTATION DE LA GALERIE (FLEXBOX) --- */
 
 .gallery {
   margin-top: 4rem;
@@ -133,25 +139,26 @@ const subtitles = computed(() => {
   margin-bottom: 2rem;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.gallery-item {
+.gallery-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espace entre les photos */
+  flex-wrap: wrap; /* Retour à la ligne automatique */
   width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s;
 }
 
-.gallery-item:hover {
-  transform: scale(1.03);
+.gallery-image {
+  flex: 1;
+  min-width: 250px; /* Taille minimale d'une photo */
+  max-width: 350px; /* Largeur max par photo */
+  height: 250px;    /* Hauteur fixe pour un alignement parfait */
+  object-fit: cover; /* Recadrage propre */
+  border-radius: 16px; /* Arrondi 16px identique à l'autre composant */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* --- LIGHTBOX STYLES --- */
+/* --- LIGHTBOX --- */
 
 .lightbox {
   position: fixed;
@@ -209,10 +216,21 @@ const subtitles = computed(() => {
   opacity: 0;
 }
 
-/* Responsive mobile */
+/* --- RESPONSIVE MOBILE & TABLETTE --- */
+
+/* --- RESPONSIVE MOBILE & TABLETTE --- */
 @media (max-width: 768px) {
   .title, .subtitle {
     max-width: 90%;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-top: 5vh;
+  }
+
+  .subtitle {
+    font-size: 1rem;
   }
 
   .image {
@@ -220,13 +238,22 @@ const subtitles = computed(() => {
     margin-bottom: 5vh;
   }
 
-  .gallery-grid {
-    grid-template-columns: 1fr;
+  .gallery-section {
+    flex-direction: column; /* Aligne verticalement sur mobile */
+    align-items: center;
+    gap: 15px;
+  }
+
+  .gallery-image {
+    width: 85%;       /* Prend une largeur raisonnable sur l'écran du téléphone */
+    max-width: 280px; /* Évite que l'image devienne trop grande ou trop haute */
+    height: auto;     /* Laisse l'image garder ses proportions d'origine (plus d'étirement !) */
   }
 
   .close-btn {
     top: 10px;
     right: 20px;
+    font-size: 2.5rem;
   }
 }
 </style>

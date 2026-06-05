@@ -1,78 +1,87 @@
-<script>
-import buzzersImg from '@/assets/buzzers.jpg'
-import speakersImg from '@/assets/speakers.jpg'
-import projecteurImg from '@/assets/projecteur.jpg'
-import whiteBoardImg from '@/assets/whiteboard.jpg'
-import brainImg from '@/assets/brain.jpg'
+<script setup>
+import { ref } from 'vue'
 
-export default {
-  name: 'Costs',
-  data () {
-    return {
-      cards: [
-        { title: "Quiz intéractifs", text: "Blind tests, Culture G., Quiz à thème...", image: buzzersImg },
-        { title: "Jeux avec ardoise et tableau", text: "'Au plus proche', 'Famille en carton'...", image: whiteBoardImg },
-        { title: 'Jeux visuels', text: "'Devine qui c'est', 'ShakiRammstein'...", image: projecteurImg },
-        { title: 'Jeux sonores', text:"Blind tests, 'Sons communs'...", image: speakersImg },
-        { title: 'Ma créativité, ma sociabilité et mon inventivité 😊', text:"Et mon humour aussi 😊", image: brainImg },
-      ],
-    }
-  },
+// Importation propre des images pour Vite
+import img1 from '@/assets/guitrancourt-02.jpg'
+import img2 from '@/assets/la-base-03-1.jpeg'
+import img3 from '@/assets/parvis-debut-mars-2026-1.jpeg'
+
+// Création d'un tableau pour manipuler les images facilement
+const images = [img1, img2, img3]
+
+// État pour gérer la photo actuellement affichée dans la lightbox
+const selectedImage = ref(null)
+
+const openZoom = (url) => {
+  selectedImage.value = url
+  // Empêche le scroll du corps de la page quand la lightbox est ouverte
+  document.body.style.overflow = 'hidden'
+}
+
+const closeZoom = () => {
+  selectedImage.value = null
+  // Réactive le scroll
+  document.body.style.overflow = 'auto'
 }
 </script>
 
 <template>
   <div class="container">
     <h1 class="title">Mes prestations</h1>
-<p class="subtitle">
-  Je me déplace dans l’Eure et ses environs (selon la distance à parcourir).
-  Si vous vous demandez si une intervention est possible chez vous, n’hésitez pas à
-  <router-link to="/contact" class="contact-link">me contacter</router-link>
-  afin que nous en discutions 😊.
-</p>
+    <p class="subtitle">
+      Je me déplace dans l’Eure et ses environs (selon la distance à parcourir).
+      Si vous vous demandez si une intervention est possible chez vous, n’hésitez pas à
+      <router-link to="/contact" class="contact-link">me contacter</router-link>
+      afin que nous en discutions 😊.
+    </p>
 
-<p class="subtitle">
-  J’anime des jeux aussi bien à domicile que dans des salles privatisées
-  (anniversaires, EVG / EVJF, mariages, à domicile, bars…), mais également dans tout type d'établissement
-  (entreprises, écoles, EHPAD…).
-</p>
+    <p class="subtitle">
+      J’anime des jeux aussi bien à domicile que dans des salles privatisées
+      (anniversaires, EVG / EVJF, mariages, bars…), mais également dans tout type d'établissement
+      (entreprises, écoles, EHPAD…).
+    </p>
 
-<p class="subtitle">
-  Je dispose d’un matériel sonore adapté à des groupes d’environ 60 personnes
-  dans une salle des fêtes. Au-delà, cela devient techniquement plus complexe.
-</p>
+    <p class="subtitle">
+      Je dispose d’un matériel sonore adapté à des groupes d’environ 60 personnes
+      dans une salle des fêtes. Au-delà, cela devient techniquement plus complexe.
+    </p>
 
-<p class="subtitle">
-  Je m’adapte à vos demandes en semaine comme en week-end,
-  sous réserve de disponibilité bien évidemment 😊.
-</p>
+    <p class="subtitle">
+      Je m’adapte à vos demandes en semaine comme en week-end,
+      sous réserve de disponibilité bien évidemment 😊.
+    </p>
 
-<p class="subtitle">
-  Enfin, je suis animateur, et non DJ.
-  Je peux assurer une ambiance musicale de fond pendant les jeux,
-  mais je ne propose pas de prestations de mixage ou de soirée dansante jusqu’au bout de la nuit 😊.
-</p>
-    <div class="cards-section">
-      <v-card
-        v-for="card in cards"
-        :key="card.title"
-        class="card"
-        color="blue"
-        variant="elevated"
-        rounded="xl"
-        :image="card.image"
-      >
-        <v-card-title class="card-title">{{ card.title }}</v-card-title>
-        <!-- Texte qui apparaît au survol -->
-        <div class="card-text">{{ card.text }}</div>
-      </v-card>
+    <p class="subtitle">
+      Enfin, je suis animateur, et non DJ.
+      Je peux assurer une ambiance musicale de fond pendant les jeux,
+      mais je ne propose pas de prestations de mixage ou de soirée dansante jusqu’au bout de la nuit 😊.
+    </p>
+
+    <div class="gallery-section">
+      <img
+        v-for="(img, index) in images"
+        :key="index"
+        :src="img"
+        :alt="'Animation ' + (index + 1)"
+        class="gallery-image zoom-trigger"
+        @click="openZoom(img)"
+      />
     </div>
+
+    <Transition name="fade">
+      <div v-if="selectedImage" class="lightbox" @click="closeZoom">
+        <button class="close-btn" @click="closeZoom">&times;</button>
+        <div class="lightbox-content">
+          <img :src="selectedImage" class="lightbox-img" @click.stop />
+        </div>
+      </div>
+    </Transition>
 
   </div>
 </template>
 
 <style scoped>
-  .contact-link {
+.contact-link {
   color: #4fc3f7;
   font-weight: bold;
   text-decoration: underline;
@@ -109,90 +118,99 @@ export default {
   width: 100%;
 }
 
-.cards-section {
-  margin-top: 4vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  justify-items: center;
-  width: 100%;
+/* --- LOGIQUE DE LA GALERIE --- */
+
+.gallery-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 90%;
+  max-width: 1200px;
 }
 
-.card {
-  position: relative;
-  width: 100%;
-  max-width: 25vw;
+.gallery-image {
+  flex: 1;
   min-width: 250px;
-  min-height: 150px;
-  height: 25vh;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
+  max-width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+.zoom-trigger {
+  cursor: zoom-in;
 }
 
-.card img {
+.zoom-trigger:hover {
+  transform: scale(1.03);
+  filter: brightness(0.9);
+}
+
+/* --- SYSTEME DE LIGHTBOX --- */
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: zoom-out;
+  backdrop-filter: blur(5px);
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 90vh;
   object-fit: contain;
-  object-position: center;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-.card-title {
-  font-size: 1.2rem;
+.close-btn {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 20px;
+  right: 30px;
+  background: none;
+  border: none;
   color: white;
-  background: rgba(0,0,0,0.4);
-  text-align: center;
-  padding: 5px 10px;
-  z-index: 2;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 10000;
+  line-height: 1;
 }
 
-.card-text {
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  font-size: 24px;
-  color: white;
-  background: rgba(0,0,0,0.5);
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  opacity: 0;
+/* Animation de transition */
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity 0.3s ease;
-  z-index: 3;
 }
 
-.card:hover .card-text {
-  opacity: 1;
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .cards-section {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 0 1rem;
-  }
-  .card {
-    max-width: 100%;
-    height: auto;
-    min-height: 180px;
-  }
-  .card-title {
-    font-size: 1rem;
-    padding: 4px 8px;
-  }
-  .card-text {
-    font-size: 18px;
-    padding: 0.4rem 0.8rem;
-  }
   .title {
     font-size: 1.5rem;
     max-width: 90%;
@@ -201,6 +219,20 @@ export default {
   .subtitle {
     font-size: 1rem;
     max-width: 90%;
+  }
+  .gallery-section {
+    flex-direction: column; /* Aligne verticalement sur mobile */
+    align-items: center;
+    gap: 15px;
+  }
+  .gallery-image {
+    width: 85%;       /* Prend une largeur raisonnable sur l'écran du téléphone */
+    max-width: 280px; /* Évite que l'image devienne trop grande ou trop haute */
+    height: auto;     /* Laisse l'image garder ses proportions d'origine (plus d'étirement !) */
+  }
+  .close-btn {
+    top: 10px;
+    right: 20px;
   }
 }
 </style>
