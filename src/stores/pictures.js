@@ -47,6 +47,11 @@ import laBase052 from "@/assets/la-base-05-2.jpeg";
 import Guitran01 from "@/assets/guitrancourt-01.jpg";
 import Guitran02 from "@/assets/guitrancourt-02.jpg";
 import laBase061 from "@/assets/la-base-06-1.jpeg";
+import guiseniers01 from "@/assets/Guiseniers-01.jpeg";
+import guiseniers02 from "@/assets/Guiseniers-02.jpeg";
+import guiseniers03 from "@/assets/Guiseniers-03.jpeg";
+import guiseniers04 from "@/assets/Guiseniers-04.jpeg";
+import guiseniers05 from "@/assets/Guiseniers-05.jpeg";
 
 function slugify(text) {
   return text
@@ -219,6 +224,21 @@ export const usePicturesStore = defineStore("pictures", {
           "Les habitués ont répondu une fois de plus présent pour cette sixième soirée quiz, mais également des nouvelles têtes qui émergent, ça fait bien plaisir.",
         subtitle2:
           "Merci à eux, bravo à tous, et notamment aux nouveaux gagnants, qu'on espère retrouver bientôt 😊.",
+      },
+      {
+        title: "Apéro quiz à Guiseniers",
+        images: [
+          guiseniers01,
+          guiseniers02,
+          guiseniers03,
+          guiseniers04,
+          guiseniers05,
+        ],
+        published: new Date("2026-06-13T03:23:00"),
+        subtitle1:
+          "Première fois que Shady Buzz anime en extérieur. Cétait pour le compte de l'association de Guiseniers",
+        subtitle2:
+          "Super ambiance, beaucoup de participants, très bonne convivialité. Tout ça autour d'un petit apéro : pas besoin de plus pour être heureux. Merci pour l'opportunité, et bravo à l'équipe 1 qui n'aura pas laissé beaucoup de points à ses adversaires 😊",
       },
     ],
   }),
