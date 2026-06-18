@@ -52,6 +52,9 @@ import guiseniers02 from "@/assets/Guiseniers-02.jpeg";
 import guiseniers03 from "@/assets/Guiseniers-03.jpeg";
 import guiseniers04 from "@/assets/Guiseniers-04.jpeg";
 import guiseniers05 from "@/assets/Guiseniers-05.jpeg";
+import ucial01 from "@/assets/ucial-01.jpeg";
+import ucial02 from "@/assets/ucial-02.jpeg";
+import ucial03 from "@/assets/ucial-03.jpeg";
 
 function slugify(text) {
   return text
@@ -239,6 +242,15 @@ export const usePicturesStore = defineStore("pictures", {
           "Première fois que Shady Buzz anime en extérieur. Cétait pour le compte de l'association de Guiseniers",
         subtitle2:
           "Super ambiance, beaucoup de participants, très bonne convivialité. Tout ça autour d'un petit apéro : pas besoin de plus pour être heureux. Merci pour l'opportunité, et bravo à l'équipe 1 qui n'aura pas laissé beaucoup de points à ses adversaires 😊",
+      },
+      {
+        title: "BBQ quiz à Gaillon",
+        images: [ucial01, ucial02, ucial03],
+        published: new Date("2026-06-17T03:23:00"),
+        subtitle1:
+          "C'était la fête pour ce rassemblement des commerçants de l'UCIAL de Gaillon et ses alentours.",
+        subtitle2:
+          "De l'humour, de la convivialité, un BBQ, de la mauvaise foi : tout le cocktail explosif qu'on aime pour passer un bon moment finalement 😊",
       },
     ],
   }),
