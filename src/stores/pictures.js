@@ -55,6 +55,7 @@ import guiseniers05 from "@/assets/Guiseniers-05.jpeg";
 import ucial01 from "@/assets/ucial-01.jpeg";
 import ucial02 from "@/assets/ucial-02.jpeg";
 import ucial03 from "@/assets/ucial-03.jpeg";
+import laBase071 from "@/assets/la-base-07-1.jpg";
 
 function slugify(text) {
   return text
@@ -251,6 +252,15 @@ export const usePicturesStore = defineStore("pictures", {
           "C'était la fête pour ce rassemblement des commerçants de l'UCIAL de Gaillon et ses alentours.",
         subtitle2:
           "De l'humour, de la convivialité, un BBQ, de la mauvaise foi : tout le cocktail explosif qu'on aime pour passer un bon moment finalement 😊",
+      },
+      {
+        title: "Soirée quiz 7 à La Base à Vernon",
+        images: [laBase071],
+        published: new Date("2026-06-18T03:23:00"),
+        subtitle1:
+          "Les habitués ont répondu une fois de plus présent pour cette septième soirée quiz, mais également des nouvelles têtes qui émergent, ça fait bien plaisir.",
+        subtitle2:
+          "Merci à eux, bravo à tous, et notamment aux joueurs et joueuses de l'équipe de rugby qui gagnent une nouvelle fois 😊.",
       },
     ],
   }),
