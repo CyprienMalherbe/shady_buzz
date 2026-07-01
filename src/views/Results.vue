@@ -38,7 +38,7 @@ export default {
 
         <li>
           <span>🟢</span>
-          <div>L’équipe victorieuse de chaque session se voit offrir une consommation par membre</div>
+          <div>L’équipe victorieuse de la session se voit offrir une consommation par membre</div>
         </li>
 
         <li>
@@ -48,7 +48,7 @@ export default {
 
         <li>
           <span>🟢</span>
-          <div>À la fin de chaque mois, la meilleure équipe se voit offrir une réduction de 50€ sur sa consommation, la deuxième 25€, et la troisième 10€</div>
+          <div>À la dernière session de chaque mois, l’équipe présente ayant cumulé le plus de points se voit offrir une réduction de 50€ sur sa consommation, la deuxième 25€, et la troisième 10€</div>
         </li>
 
         <li>
