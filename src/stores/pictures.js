@@ -56,6 +56,7 @@ import ucial01 from "@/assets/ucial-01.jpeg";
 import ucial02 from "@/assets/ucial-02.jpeg";
 import ucial03 from "@/assets/ucial-03.jpeg";
 import laBase071 from "@/assets/la-base-07-1.jpg";
+import laBase081 from "@/assets/la-base-08-1.jpg";
 
 function slugify(text) {
   return text
@@ -261,6 +262,14 @@ export const usePicturesStore = defineStore("pictures", {
           "Les habitués ont répondu une fois de plus présent pour cette septième soirée quiz, mais également des nouvelles têtes qui émergent, ça fait bien plaisir.",
         subtitle2:
           "Merci à eux, bravo à tous, et notamment aux joueurs et joueuses de l'équipe de rugby qui gagnent une nouvelle fois 😊.",
+      },
+      {
+        title: "Soirée quiz 8 à La Base à Vernon",
+        images: [laBase081],
+        published: new Date("2026-07-02T03:23:00"),
+        subtitle1:
+          "Les habitués ont répondu une fois de plus présent pour cette huitième soirée quiz, et même les amis de mon club de sport 😊.",
+        subtitle2: "Merci à eux, bravo à tous, et à dans deux semaines 😊.",
       },
     ],
   }),
