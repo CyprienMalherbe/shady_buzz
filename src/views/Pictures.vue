@@ -19,7 +19,7 @@ function slugify(text) {
 
 <template>
   <div class="container">
-    <h1 class="title">Mes événements déjà réalisés</h1>
+    <h1 class="title">Événements déjà réalisés</h1>
     <div class="cards-section">
       <v-card
         v-for="card in orderedCards"
