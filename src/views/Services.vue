@@ -42,7 +42,7 @@ const closeZoom = () => {
     </p>
 
     <p class="subtitle">
-      Je dispose d’un matériel sonore adapté à des groupes d’environ 60 personnes
+      Je dispose d’un matériel sonore adapté à des groupes d’environ 100 personnes
       dans une salle des fêtes. Au-delà, cela devient techniquement plus complexe.
     </p>
 
@@ -53,8 +53,8 @@ const closeZoom = () => {
 
     <p class="subtitle">
       Enfin, je suis animateur, et non DJ.
-      Je peux assurer une ambiance musicale de fond pendant les jeux,
-      mais je ne propose pas de prestations de mixage ou de soirée dansante jusqu’au bout de la nuit 😊.
+      Je peux assurer une ambiance musicale de fond pendant les jeux (qui peut s'étaler par la suite)
+      mais je ne propose pas de prestations de mixage jusqu’au bout de la nuit 😊.
     </p>
 
     <div class="gallery-section">

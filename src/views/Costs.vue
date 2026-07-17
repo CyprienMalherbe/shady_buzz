@@ -7,6 +7,7 @@ export default {
         { title: "Formule 'classique'", price: '250 €' },
         { title: "Formule 'classique longue'", price: '300 €' },
         { title: 'Formule personnalisée (durée et / ou thèmes)', price: 'À convenir ensemble' },
+        { title: 'Supplément soirée dansante', price: 'À convenir ensemble' },
       ],
     }
   },
@@ -32,7 +33,7 @@ export default {
             le temps de préparation des jeux, ainsi que la durée de l’animation sur place.
             Je vous invite à
             <router-link to="/contact" class="contact-link">me contacter</router-link>
-            pour un devis personnalisé ou pour toute demande d’information.
+            pour un devis personnalisé ou pour toute autre demande d’information.
           </p>
         </div>
       </div>
