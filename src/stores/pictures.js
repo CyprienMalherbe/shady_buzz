@@ -58,6 +58,7 @@ import ucial03 from "@/assets/ucial-03.jpeg";
 import laBase071 from "@/assets/la-base-07-1.jpg";
 import laBase081 from "@/assets/la-base-08-1.jpg";
 import laBase091 from "@/assets/la-base-09-1.jpg";
+import laBase101 from "@/assets/la-base-10-1.jpg";
 
 function slugify(text) {
   return text
@@ -279,6 +280,14 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle1:
           "Bravo pour la belle victoire de Sébastien ce soir, qui aura écoeuré la concurrence.",
         subtitle2: "À dans 2 semaines 😊.",
+      },
+      {
+        title: "Soirée quiz 10 à La Base à Vernon",
+        images: [laBase101],
+        published: new Date("2026-07-30T03:23:00"),
+        subtitle1:
+          "Super moment en petit comité pour cette fois, mais ça a permis de voir d'autres types de jeux et cétait chouette quand même 😊.",
+        subtitle2: "À dans 2 semaines pour entamer août 😊.",
       },
     ],
   }),
