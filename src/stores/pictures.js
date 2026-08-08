@@ -59,6 +59,12 @@ import laBase071 from "@/assets/la-base-07-1.jpg";
 import laBase081 from "@/assets/la-base-08-1.jpg";
 import laBase091 from "@/assets/la-base-09-1.jpg";
 import laBase101 from "@/assets/la-base-10-1.jpg";
+import annivMikimik01 from "@/assets/anniv-mikmik-01.jpeg";
+import annivMikimik02 from "@/assets/anniv-mikmik-02.jpeg";
+import annivMikimik03 from "@/assets/anniv-mikmik-03.jpeg";
+import annivMikimik04 from "@/assets/anniv-mikmik-04.jpeg";
+import annivMikimik05 from "@/assets/anniv-mikmik-05.jpeg";
+import annivMikimik06 from "@/assets/anniv-mikmik-06.jpeg";
 
 function slugify(text) {
   return text
@@ -288,6 +294,23 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle1:
           "Super moment en petit comité pour cette fois, mais ça a permis de voir d'autres types de jeux et cétait chouette quand même 😊.",
         subtitle2: "À dans 2 semaines pour entamer août 😊.",
+      },
+      {
+        title: "Après-midi anniversaire de Mikaël",
+        images: [
+          annivMikimik02,
+          annivMikimik06,
+          annivMikimik05,
+          annivMikimik03,
+          annivMikimik01,
+          annivMikimik04,
+        ],
+        published: new Date("2026-08-01T03:23:00"),
+        subtitle1: "Après-midi quiz pour les 40 ans de Mikaël, aka Mikmik.",
+        subtitle2:
+          "Initialement il était prévu 4 jeux, mais les convives en auront redemandé alors on a pu pousser à 6 😊.",
+        subtitle3:
+          "Très bonne ambiance, beaucoup d'humour et de bons joueurs, tout le modne était ravi, vivement les 50 ans 😊.",
       },
     ],
   }),
