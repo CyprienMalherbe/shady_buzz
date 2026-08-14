@@ -65,6 +65,7 @@ import annivMikimik03 from "@/assets/anniv-mikmik-03.jpeg";
 import annivMikimik04 from "@/assets/anniv-mikmik-04.jpeg";
 import annivMikimik05 from "@/assets/anniv-mikmik-05.jpeg";
 import annivMikimik06 from "@/assets/anniv-mikmik-06.jpeg";
+import laBase11 from "@/assets/la-base-11.jpg";
 
 function slugify(text) {
   return text
@@ -311,6 +312,14 @@ export const usePicturesStore = defineStore("pictures", {
           "Initialement il était prévu 4 jeux, mais les convives en auront redemandé alors on a pu pousser à 6 😊.",
         subtitle3:
           "Très bonne ambiance, beaucoup d'humour et de bons joueurs, tout le modne était ravi, vivement les 50 ans 😊.",
+      },
+      {
+        title: "Soirée quiz 11 à La Base à Vernon",
+        images: [laBase11],
+        published: new Date("2026-08-13T03:23:00"),
+        subtitle1:
+          "Retour gagnant pour 'les Dexter', qui reviennent se mettre dans le bain avant, on l'espère, de revenir tenter de glaner les récompenses mensuelles à partir de septembre.",
+        subtitle2: "À dans 2 semaines pour la dernière d'août 😊.",
       },
     ],
   }),
