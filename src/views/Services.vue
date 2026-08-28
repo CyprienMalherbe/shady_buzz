@@ -5,9 +5,10 @@ import { ref } from 'vue'
 import img1 from '@/assets/guitrancourt-02.jpg'
 import img2 from '@/assets/la-base-03-1.jpeg'
 import img3 from '@/assets/parvis-debut-mars-2026-1.jpeg'
+import img4 from '@/assets/la-base-12-1.jpeg'
 
 // Création d'un tableau pour manipuler les images facilement
-const images = [img1, img2, img3]
+const images = [img1, img2, img3, img4]
 
 // État pour gérer la photo actuellement affichée dans la lightbox
 const selectedImage = ref(null)
