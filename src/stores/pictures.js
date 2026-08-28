@@ -66,6 +66,8 @@ import annivMikimik04 from "@/assets/anniv-mikmik-04.jpeg";
 import annivMikimik05 from "@/assets/anniv-mikmik-05.jpeg";
 import annivMikimik06 from "@/assets/anniv-mikmik-06.jpeg";
 import laBase11 from "@/assets/la-base-11.jpg";
+import laBase121 from "@/assets/la-base-12-1.jpeg";
+import laBase122 from "@/assets/la-base-12-2.jpg";
 
 function slugify(text) {
   return text
@@ -320,6 +322,15 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle1:
           "Retour gagnant pour 'les Dexter', qui reviennent se mettre dans le bain avant, on l'espère, de revenir tenter de glaner les récompenses mensuelles à partir de septembre.",
         subtitle2: "À dans 2 semaines pour la dernière d'août 😊.",
+      },
+      {
+        title: "Soirée quiz 12 à La Base à Vernon",
+        images: [laBase121, laBase122],
+        published: new Date("2026-08-27T03:23:00"),
+        subtitle1:
+          "Les Dexter ont encore frappé. Qui pour les détrôner ? Réponse la semaine prochaine.",
+        subtitle2:
+          "À la semaine prochaine pour le début du classement mensuel 😊.",
       },
     ],
   }),
