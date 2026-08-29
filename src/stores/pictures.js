@@ -68,6 +68,9 @@ import annivMikimik06 from "@/assets/anniv-mikmik-06.jpeg";
 import laBase11 from "@/assets/la-base-11.jpg";
 import laBase121 from "@/assets/la-base-12-1.jpeg";
 import laBase122 from "@/assets/la-base-12-2.jpg";
+import nympheas1 from "@/assets/nympheas-01.jpeg";
+import nympheas2 from "@/assets/nympheas-02.jpeg";
+import nympheas3 from "@/assets/nympheas-03.jpeg";
 
 function slugify(text) {
   return text
@@ -331,6 +334,17 @@ export const usePicturesStore = defineStore("pictures", {
           "Les Dexter ont encore frappé. Qui pour les détrôner ? Réponse la semaine prochaine.",
         subtitle2:
           "À la semaine prochaine pour le début du classement mensuel 😊.",
+      },
+      {
+        title: "Centre de Loisirs Les Nymphéas 2",
+        images: [nympheas2, nympheas3, nympheas1],
+        published: new Date("2026-08-28T03:23:00"),
+        subtitle1:
+          "Aujourd'hui c'était double dose de quiz pour une double dose de plaisir. En effet on a eu un quiz pour les enfants au centre de loisirs 'Les Nymphéas' à Courcelles sur Seine pendant 1h30, puis je suis revenu pour la même durée mais cette fois-ci accompagnés de leur(s) parent(s).",
+        subtitle2:
+          "À ce petit jeu-là, les enfants se sont très très bien débrouillés malgré des parents qui se sont très vite pris au jeu, c'était super chouette de voir une telle harmonie.",
+        subtitle3:
+          "Merci à tous pour la bonne ambiance, et bien sûr au centre pour l'accueil 😊.",
       },
     ],
   }),

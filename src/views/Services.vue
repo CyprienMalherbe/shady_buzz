@@ -6,9 +6,12 @@ import img1 from '@/assets/guitrancourt-02.jpg'
 import img2 from '@/assets/la-base-03-1.jpeg'
 import img3 from '@/assets/parvis-debut-mars-2026-1.jpeg'
 import img4 from '@/assets/la-base-12-1.jpeg'
+import img5 from '@/assets/nympheas-02.jpeg'
+import img6 from '@/assets/nympheas-01.jpeg'
+import img7 from '@/assets/Guiseniers-01.jpeg'
 
 // Création d'un tableau pour manipuler les images facilement
-const images = [img1, img2, img3, img4]
+const images = [img1, img2, img3, img4, img5, img6, img7]
 
 // État pour gérer la photo actuellement affichée dans la lightbox
 const selectedImage = ref(null)
