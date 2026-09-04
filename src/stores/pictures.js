@@ -71,6 +71,7 @@ import laBase122 from "@/assets/la-base-12-2.jpg";
 import nympheas1 from "@/assets/nympheas-01.jpeg";
 import nympheas2 from "@/assets/nympheas-02.jpeg";
 import nympheas3 from "@/assets/nympheas-03.jpeg";
+import laBase13 from "@/assets/la-base-13-1.jpg";
 
 function slugify(text) {
   return text
@@ -345,6 +346,16 @@ export const usePicturesStore = defineStore("pictures", {
           "À ce petit jeu-là, les enfants se sont très très bien débrouillés malgré des parents qui se sont très vite pris au jeu, c'était super chouette de voir une telle harmonie.",
         subtitle3:
           "Merci à tous pour la bonne ambiance, et bien sûr au centre pour l'accueil 😊.",
+      },
+      {
+        title: "Soirée quiz 13 à La Base à Vernon",
+        images: [laBase13],
+        published: new Date("2026-09-03T03:23:00"),
+        subtitle1:
+          "C'est la nouvelle équipe 'Play Time' qui aura empoché les 20 points ce soir.",
+        subtitle2:
+          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>",
+        subtitle3: "Suite la semaine prochaine 😊.",
       },
     ],
   }),
