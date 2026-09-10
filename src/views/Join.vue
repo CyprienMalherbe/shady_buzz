@@ -69,7 +69,7 @@ export default {
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 70vw;
+  max-width: 85vw;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
 }
