@@ -1,77 +1,78 @@
-import { defineStore } from "pinia";
-import chercheBistrotDuClocherImg from "@/assets/chercheBistrotDuClocher.jpeg";
-import fullRoomBistrotDuClocherImg from "@/assets/fullRoomBistrotDuClocher.jpg";
-import presentationBistrotDuClocherImg from "@/assets/presentationBistrotDuClocher.jpeg";
-import shadyBuzzBistrotDuClocherImg from "@/assets/shadyBuzzBistrotDuClocher.jpeg";
-import giveBistrotDuClocherImg from "@/assets/give-bistrot-du-clocher.jpeg";
-import laughsBistrotDuClocherImg from "@/assets/laughs-bistrot-du-clocher.jpeg";
-import CourcellesAllAgain from "@/assets/Courcelles-all-again.png";
-import CourcellesAll from "@/assets/Courcelles-all.png";
-import CourcellesMe from "@/assets/Courcelles-me.png";
-import CourcellesSong from "@/assets/Courcelles-song.png";
-import NewsPaper from "@/assets/newspaper.jpeg";
-import ParvisMars1 from "@/assets/parvis-debut-mars-2026-1.jpeg";
-import ParvisMars2 from "@/assets/parvis-debut-mars-2026-2.jpeg";
-import ParvisMars3 from "@/assets/parvis-debut-mars-2026-3.jpeg";
-import ParvisMars4 from "@/assets/parvis-debut-mars-2026-4.jpeg";
-import ParvisMars from "@/assets/parvis-debut-mars-2026.jpeg";
-import ROCEMS1 from "@/assets/ROCEMS-1.jpeg";
-import ROCEMS2 from "@/assets/ROCEMS-2.jpeg";
-import ROCEMS3 from "@/assets/ROCEMS-3.jpeg";
-import ROCEMS4 from "@/assets/ROCEMS-4.jpeg";
-import KPlusUn1 from "@/assets/k-plus-un-1.jpeg";
-import KPlusUn2 from "@/assets/k-plus-un-2.jpeg";
-import KPlusUn3 from "@/assets/k-plus-un-3.jpeg";
-import laBase011 from "@/assets/la-base-01-1.jpeg";
-import laBase012 from "@/assets/la-base-01-2.jpeg";
-import laBase013 from "@/assets/la-base-01-3.jpeg";
-import laBase014 from "@/assets/la-base-01-4.jpeg";
-import laBase015 from "@/assets/la-base-01-5.jpeg";
-import laBase016 from "@/assets/la-base-01-6.jpeg";
-import laBase017 from "@/assets/la-base-01-7.jpeg";
-import parvis21 from "@/assets/parvis-2-1.jpg";
-import parvis22 from "@/assets/parvis-2-2.jpg";
-import parvis23 from "@/assets/parvis-2-3.jpg";
-import parvis24 from "@/assets/parvis-2-4.jpg";
-import laBase021 from "@/assets/la-base-02-1.jpg";
-import laBase022 from "@/assets/la-base-02-2.jpg";
-import laBase023 from "@/assets/la-base-02-3.jpg";
-import laBase031 from "@/assets/la-base-03-1.jpeg";
-import laBase032 from "@/assets/la-base-03-2.jpeg";
-import laBase033 from "@/assets/la-base-03-3.jpeg";
-import laBase041 from "@/assets/la-base-04-1.jpeg";
-import laBase042 from "@/assets/la-base-04-2.jpeg";
-import laBase043 from "@/assets/la-base-04-3.jpeg";
-import laBase051 from "@/assets/la-base-05-1.jpeg";
-import laBase052 from "@/assets/la-base-05-2.jpeg";
-import Guitran01 from "@/assets/guitrancourt-01.jpg";
-import Guitran02 from "@/assets/guitrancourt-02.jpg";
-import laBase061 from "@/assets/la-base-06-1.jpeg";
-import guiseniers01 from "@/assets/Guiseniers-01.jpeg";
-import guiseniers02 from "@/assets/Guiseniers-02.jpeg";
-import guiseniers03 from "@/assets/Guiseniers-03.jpeg";
-import guiseniers04 from "@/assets/Guiseniers-04.jpeg";
-import guiseniers05 from "@/assets/Guiseniers-05.jpeg";
-import ucial01 from "@/assets/ucial-01.jpeg";
-import ucial02 from "@/assets/ucial-02.jpeg";
-import ucial03 from "@/assets/ucial-03.jpeg";
-import laBase071 from "@/assets/la-base-07-1.jpg";
-import laBase081 from "@/assets/la-base-08-1.jpg";
-import laBase091 from "@/assets/la-base-09-1.jpg";
-import laBase101 from "@/assets/la-base-10-1.jpg";
-import annivMikimik01 from "@/assets/anniv-mikmik-01.jpeg";
-import annivMikimik02 from "@/assets/anniv-mikmik-02.jpeg";
-import annivMikimik03 from "@/assets/anniv-mikmik-03.jpeg";
-import annivMikimik04 from "@/assets/anniv-mikmik-04.jpeg";
-import annivMikimik05 from "@/assets/anniv-mikmik-05.jpeg";
-import annivMikimik06 from "@/assets/anniv-mikmik-06.jpeg";
-import laBase11 from "@/assets/la-base-11.jpg";
-import laBase121 from "@/assets/la-base-12-1.jpeg";
-import laBase122 from "@/assets/la-base-12-2.jpg";
-import nympheas1 from "@/assets/nympheas-01.jpeg";
-import nympheas2 from "@/assets/nympheas-02.jpeg";
-import nympheas3 from "@/assets/nympheas-03.jpeg";
-import laBase13 from "@/assets/la-base-13-1.jpg";
+import annivMikimik01 from "@/assets/anniv-mikmik-01.jpeg"
+import annivMikimik02 from "@/assets/anniv-mikmik-02.jpeg"
+import annivMikimik03 from "@/assets/anniv-mikmik-03.jpeg"
+import annivMikimik04 from "@/assets/anniv-mikmik-04.jpeg"
+import annivMikimik05 from "@/assets/anniv-mikmik-05.jpeg"
+import annivMikimik06 from "@/assets/anniv-mikmik-06.jpeg"
+import chercheBistrotDuClocherImg from "@/assets/chercheBistrotDuClocher.jpeg"
+import CourcellesAllAgain from "@/assets/Courcelles-all-again.png"
+import CourcellesAll from "@/assets/Courcelles-all.png"
+import CourcellesMe from "@/assets/Courcelles-me.png"
+import CourcellesSong from "@/assets/Courcelles-song.png"
+import fullRoomBistrotDuClocherImg from "@/assets/fullRoomBistrotDuClocher.jpg"
+import giveBistrotDuClocherImg from "@/assets/give-bistrot-du-clocher.jpeg"
+import guiseniers01 from "@/assets/Guiseniers-01.jpeg"
+import guiseniers02 from "@/assets/Guiseniers-02.jpeg"
+import guiseniers03 from "@/assets/Guiseniers-03.jpeg"
+import guiseniers04 from "@/assets/Guiseniers-04.jpeg"
+import guiseniers05 from "@/assets/Guiseniers-05.jpeg"
+import Guitran01 from "@/assets/guitrancourt-01.jpg"
+import Guitran02 from "@/assets/guitrancourt-02.jpg"
+import KPlusUn1 from "@/assets/k-plus-un-1.jpeg"
+import KPlusUn2 from "@/assets/k-plus-un-2.jpeg"
+import KPlusUn3 from "@/assets/k-plus-un-3.jpeg"
+import laBase011 from "@/assets/la-base-01-1.jpeg"
+import laBase012 from "@/assets/la-base-01-2.jpeg"
+import laBase013 from "@/assets/la-base-01-3.jpeg"
+import laBase014 from "@/assets/la-base-01-4.jpeg"
+import laBase015 from "@/assets/la-base-01-5.jpeg"
+import laBase016 from "@/assets/la-base-01-6.jpeg"
+import laBase017 from "@/assets/la-base-01-7.jpeg"
+import laBase021 from "@/assets/la-base-02-1.jpg"
+import laBase022 from "@/assets/la-base-02-2.jpg"
+import laBase023 from "@/assets/la-base-02-3.jpg"
+import laBase031 from "@/assets/la-base-03-1.jpeg"
+import laBase032 from "@/assets/la-base-03-2.jpeg"
+import laBase033 from "@/assets/la-base-03-3.jpeg"
+import laBase041 from "@/assets/la-base-04-1.jpeg"
+import laBase042 from "@/assets/la-base-04-2.jpeg"
+import laBase043 from "@/assets/la-base-04-3.jpeg"
+import laBase051 from "@/assets/la-base-05-1.jpeg"
+import laBase052 from "@/assets/la-base-05-2.jpeg"
+import laBase061 from "@/assets/la-base-06-1.jpeg"
+import laBase071 from "@/assets/la-base-07-1.jpg"
+import laBase081 from "@/assets/la-base-08-1.jpg"
+import laBase091 from "@/assets/la-base-09-1.jpg"
+import laBase101 from "@/assets/la-base-10-1.jpg"
+import laBase11 from "@/assets/la-base-11.jpg"
+import laBase121 from "@/assets/la-base-12-1.jpeg"
+import laBase122 from "@/assets/la-base-12-2.jpg"
+import laBase13 from "@/assets/la-base-13-1.jpg"
+import laBase14 from "@/assets/la-base-14.jpg"
+import laughsBistrotDuClocherImg from "@/assets/laughs-bistrot-du-clocher.jpeg"
+import NewsPaper from "@/assets/newspaper.jpeg"
+import nympheas1 from "@/assets/nympheas-01.jpeg"
+import nympheas2 from "@/assets/nympheas-02.jpeg"
+import nympheas3 from "@/assets/nympheas-03.jpeg"
+import parvis21 from "@/assets/parvis-2-1.jpg"
+import parvis22 from "@/assets/parvis-2-2.jpg"
+import parvis23 from "@/assets/parvis-2-3.jpg"
+import parvis24 from "@/assets/parvis-2-4.jpg"
+import ParvisMars1 from "@/assets/parvis-debut-mars-2026-1.jpeg"
+import ParvisMars2 from "@/assets/parvis-debut-mars-2026-2.jpeg"
+import ParvisMars3 from "@/assets/parvis-debut-mars-2026-3.jpeg"
+import ParvisMars4 from "@/assets/parvis-debut-mars-2026-4.jpeg"
+import ParvisMars from "@/assets/parvis-debut-mars-2026.jpeg"
+import presentationBistrotDuClocherImg from "@/assets/presentationBistrotDuClocher.jpeg"
+import ROCEMS1 from "@/assets/ROCEMS-1.jpeg"
+import ROCEMS2 from "@/assets/ROCEMS-2.jpeg"
+import ROCEMS3 from "@/assets/ROCEMS-3.jpeg"
+import ROCEMS4 from "@/assets/ROCEMS-4.jpeg"
+import shadyBuzzBistrotDuClocherImg from "@/assets/shadyBuzzBistrotDuClocher.jpeg"
+import ucial01 from "@/assets/ucial-01.jpeg"
+import ucial02 from "@/assets/ucial-02.jpeg"
+import ucial03 from "@/assets/ucial-03.jpeg"
+import { defineStore } from "pinia"
 
 function slugify(text) {
   return text
@@ -353,6 +354,16 @@ export const usePicturesStore = defineStore("pictures", {
         published: new Date("2026-09-03T03:23:00"),
         subtitle1:
           "C'est la nouvelle équipe 'Play Time' qui aura empoché les 20 points ce soir.",
+        subtitle2:
+          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>",
+        subtitle3: "Suite la semaine prochaine 😊.",
+      },
+      {
+        title: "Soirée quiz 14 à La Base à Vernon",
+        images: [laBase14],
+        published: new Date("2026-09-10T03:23:00"),
+        subtitle1:
+          "Félicitations aux Dexter qui ont su remettre les pendules à l'heure et arriver en tête du clasement à égalité avec les 'Play Time', les Oxygénés sont en embuscade.",
         subtitle2:
           "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>",
         subtitle3: "Suite la semaine prochaine 😊.",
