@@ -4,6 +4,12 @@ import annivMikimik03 from "@/assets/anniv-mikmik-03.jpeg"
 import annivMikimik04 from "@/assets/anniv-mikmik-04.jpeg"
 import annivMikimik05 from "@/assets/anniv-mikmik-05.jpeg"
 import annivMikimik06 from "@/assets/anniv-mikmik-06.jpeg"
+import baptemeTom01 from "@/assets/bapteme-tom-01.jpg"
+import baptemeTom02 from "@/assets/bapteme-tom-02.jpg"
+import baptemeTom03 from "@/assets/bapteme-tom-03.jpg"
+import baptemeTom04 from "@/assets/bapteme-tom-04.jpg"
+import baptemeTom05 from "@/assets/bapteme-tom-05.jpg"
+import baptemeTom06 from "@/assets/bapteme-tom-06.jpg"
 import chercheBistrotDuClocherImg from "@/assets/chercheBistrotDuClocher.jpeg"
 import CourcellesAllAgain from "@/assets/Courcelles-all-again.png"
 import CourcellesAll from "@/assets/Courcelles-all.png"
@@ -367,6 +373,25 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle2:
           "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>",
         subtitle3: "Suite la semaine prochaine 😊.",
+      },
+      {
+        title: "Baptême Tom à Mézières sur Seine",
+        images: [
+          baptemeTom01,
+          baptemeTom02,
+          baptemeTom03,
+          baptemeTom04,
+          baptemeTom05,
+          baptemeTom06,
+        ],
+        published: new Date("2026-09-12T03:23:00"),
+        subtitle1:
+          "C'était la folie au baptême de Tom, qui soufflait également sa première bougie.",
+        subtitle2:
+          "Le thème des dinosaures était particulièrement adapté, les décors très bien réalisés, et les noms des tables originaux.",
+        subtitle3:
+          "À ce petit jeu, c'est la table des tricératops qui a réussi à écraser la concurrence.",
+        subtitle4: "Merci pour l'ambiance et pour la bonne rigolade.",
       },
     ],
   }),
