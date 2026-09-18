@@ -55,6 +55,9 @@ import laBase121 from "@/assets/la-base-12-1.jpeg"
 import laBase122 from "@/assets/la-base-12-2.jpg"
 import laBase13 from "@/assets/la-base-13-1.jpg"
 import laBase14 from "@/assets/la-base-14.jpg"
+import laBase151 from "@/assets/la-base-15-1.jpg"
+import laBase152 from "@/assets/la-base-15-2.jpg"
+import laBase153 from "@/assets/la-base-15-3.jpg"
 import laughsBistrotDuClocherImg from "@/assets/laughs-bistrot-du-clocher.jpeg"
 import NewsPaper from "@/assets/newspaper.jpeg"
 import nympheas1 from "@/assets/nympheas-01.jpeg"
@@ -392,6 +395,16 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle3:
           "À ce petit jeu, c'est la table des tricératops qui a réussi à écraser la concurrence.",
         subtitle4: "Merci pour l'ambiance et pour la bonne rigolade.",
+      },
+      {
+        title: "Soirée quiz 15 à La Base à Vernon",
+        images: [laBase151, laBase152, laBase153],
+        published: new Date("2026-09-17T03:23:00"),
+        subtitle1:
+          "Félicitations aux Dexter qui prennent la tête du classement mensuel.",
+        subtitle2:
+          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>",
+        subtitle3: "Suite la semaine prochaine 😊.",
       },
     ],
   }),
