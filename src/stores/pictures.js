@@ -4,6 +4,8 @@ import annivMikimik03 from "@/assets/anniv-mikmik-03.jpeg"
 import annivMikimik04 from "@/assets/anniv-mikmik-04.jpeg"
 import annivMikimik05 from "@/assets/anniv-mikmik-05.jpeg"
 import annivMikimik06 from "@/assets/anniv-mikmik-06.jpeg"
+import apeivKermesse01 from "@/assets/apeiv-kermesse-01.jpg"
+import apeivKermesse02 from "@/assets/apeiv-kermesse-02.jpg"
 import baptemeTom01 from "@/assets/bapteme-tom-01.jpg"
 import baptemeTom02 from "@/assets/bapteme-tom-02.jpg"
 import baptemeTom03 from "@/assets/bapteme-tom-03.jpg"
@@ -405,6 +407,16 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle2:
           "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>",
         subtitle3: "Suite la semaine prochaine 😊.",
+      },
+      {
+        title: "Après-midi animations à la kermesse",
+        images: [apeivKermesse01, apeivKermesse02],
+        published: new Date("2026-09-19T03:23:00"),
+        subtitle1:
+          "Aujourd'hui c'était après-midi animations à la kermesse de Mézières-sur-Seine.",
+        subtitle2:
+          "Tous les participants étaient ravis, enfants et parents, et se sont bien pris aux jeux proposés, avec buzzers ou pas 😊.",
+        subtitle3: "Vivement la prochaine c'était chouette 😊.",
       },
     ],
   }),
