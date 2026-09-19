@@ -2,13 +2,13 @@
 import { ref } from 'vue'
 
 // Importation propre des images pour Vite
-import img3 from '@/assets/bapteme-tom-02.jpg'
-import img7 from '@/assets/Guiseniers-01.jpeg'
-import img1 from '@/assets/guitrancourt-02.jpg'
-import img2 from '@/assets/la-base-03-1.jpeg'
-import img4 from '@/assets/la-base-12-1.jpeg'
+import img2 from '@/assets/apeiv-kermesse-02.jpg'
+import img1 from '@/assets/bapteme-tom-02.jpg'
+import img3 from '@/assets/Guiseniers-02.jpeg'
+import img4 from '@/assets/guitrancourt-02.jpg'
+import img5 from '@/assets/la-base-03-1.jpeg'
 import img6 from '@/assets/nympheas-01.jpeg'
-import img5 from '@/assets/nympheas-02.jpeg'
+import img7 from '@/assets/nympheas-02.jpeg'
 
 // Création d'un tableau pour manipuler les images facilement
 const images = [img1, img2, img3, img4, img5, img6, img7]
@@ -40,7 +40,7 @@ const closeZoom = () => {
     </p>
 
     <p class="subtitle">
-      J’anime des jeux aussi bien à domicile que dans des salles privatisées
+      J’anime des jeux (quiz, blindtests, jeux avec ardoises, jeux visuels) aussi bien à domicile que dans des salles privatisées
       (anniversaires, EVG / EVJF, mariages, bars…), mais également dans tout type d'établissement
       (entreprises, écoles, EHPAD…).
     </p>
@@ -53,12 +53,6 @@ const closeZoom = () => {
     <p class="subtitle">
       Je m’adapte à vos demandes en semaine comme en week-end,
       sous réserve de disponibilité bien évidemment 😊.
-    </p>
-
-    <p class="subtitle">
-      Enfin, je suis animateur, et non DJ.
-      Je peux assurer une ambiance musicale de fond pendant les jeux (qui peut s'étaler par la suite)
-      mais je ne propose pas de prestations de mixage jusqu’au bout de la nuit 😊.
     </p>
 
     <div class="gallery-section">

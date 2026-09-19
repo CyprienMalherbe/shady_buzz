@@ -30,7 +30,7 @@ export default {
       et à l’univers de l’animation.
     </p>
 
-    <img class="image" src="@/assets/test.png" alt="Photo de l'animateur SHADY BUZZ">
+    <img class="image" src="@/assets/Guiseniers-01.jpeg" alt="Photo de l'animateur SHADY BUZZ">
 
     <p class="subtitle">
       N’hésitez pas à parcourir les différentes rubriques du site, et notamment
@@ -81,7 +81,7 @@ export default {
 .image {
   max-width: 25vw;
   width: 100%;
-  max-height: 45vh;
+  max-height: 55vh;
   border-radius: 10px;
   margin-top: 1vh;
   margin-bottom: 4vh;
