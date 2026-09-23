@@ -4,8 +4,8 @@ export default {
   data () {
     return {
       formulas: [
-        { title: "Formule 'classique'", price: '250 €' },
-        { title: "Formule 'classique longue'", price: '300 €' },
+        { title: "Formule 'classique'", price: '300 €' },
+        { title: "Formule 'classique longue'", price: '400 €' },
         { title: 'Formule personnalisée (durée et / ou thèmes)', price: 'À convenir ensemble' },
         { title: 'Supplément soirée dansante', price: 'À convenir ensemble' },
       ],
@@ -33,7 +33,7 @@ export default {
             le temps de préparation des jeux, ainsi que la durée de l’animation sur place.
             Je vous invite à
             <router-link to="/contact" class="contact-link">me contacter</router-link>
-            pour un devis personnalisé ou pour toute autre demande d’information.
+            pour un devis personnalisé ou pour toute autre demande d’informations.
           </p>
         </div>
       </div>
@@ -62,7 +62,7 @@ export default {
 
           <p class="subtitle">
             L’animation « classique » correspond à une sélection de jeux prédéfinis.
-            En cas de personnalisation plus poussée (thèmes spécifiques, formats particuliers,
+            En cas d'adaptation plus poussée (thèmes spécifiques, formats particuliers,
             contraintes spécifiques), une formule personnalisée sera proposée.
           </p>
         </div>

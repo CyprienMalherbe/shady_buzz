@@ -17,6 +17,7 @@ import CourcellesAllAgain from "@/assets/Courcelles-all-again.png"
 import CourcellesAll from "@/assets/Courcelles-all.png"
 import CourcellesMe from "@/assets/Courcelles-me.png"
 import CourcellesSong from "@/assets/Courcelles-song.png"
+import coworkingCAF2026 from "@/assets/coworking-CAF-2026.jpg"
 import fullRoomBistrotDuClocherImg from "@/assets/fullRoomBistrotDuClocher.jpg"
 import giveBistrotDuClocherImg from "@/assets/give-bistrot-du-clocher.jpeg"
 import guiseniers01 from "@/assets/Guiseniers-01.jpeg"
@@ -417,6 +418,15 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle2:
           "Tous les participants étaient ravis, enfants et parents, et se sont bien pris aux jeux proposés, avec buzzers ou pas 😊.",
         subtitle3: "Vivement la prochaine c'était chouette 😊.",
+      },
+      {
+        title: "Soirée blindtest à La Filature",
+        images: [coworkingCAF2026],
+        published: new Date("2026-09-22T03:23:00"),
+        subtitle1:
+          "Animation blindtest à l'espace coworking 'La Filature' à Louviers pour le compte de la CAF de l'Eure.",
+        subtitle2:
+          "Bonne ambiance une fois de plus c'était chouette. Vivement la prochaine.",
       },
     ],
   }),
