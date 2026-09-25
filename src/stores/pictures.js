@@ -61,6 +61,7 @@ import laBase14 from "@/assets/la-base-14.jpg"
 import laBase151 from "@/assets/la-base-15-1.jpg"
 import laBase152 from "@/assets/la-base-15-2.jpg"
 import laBase153 from "@/assets/la-base-15-3.jpg"
+import laBase16 from "@/assets/la-base-16.jpg"
 import laughsBistrotDuClocherImg from "@/assets/laughs-bistrot-du-clocher.jpeg"
 import NewsPaper from "@/assets/newspaper.jpeg"
 import nympheas1 from "@/assets/nympheas-01.jpeg"
@@ -367,7 +368,7 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle1:
           "C'est la nouvelle équipe 'Play Time' qui aura empoché les 20 points ce soir.",
         subtitle2:
-          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>",
+          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
         subtitle3: "Suite la semaine prochaine 😊.",
       },
       {
@@ -377,7 +378,7 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle1:
           "Félicitations aux Dexter qui ont su remettre les pendules à l'heure et arriver en tête du clasement à égalité avec les 'Play Time', les Oxygénés sont en embuscade.",
         subtitle2:
-          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>",
+          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
         subtitle3: "Suite la semaine prochaine 😊.",
       },
       {
@@ -406,7 +407,7 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle1:
           "Félicitations aux Dexter qui prennent la tête du classement mensuel.",
         subtitle2:
-          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>",
+          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
         subtitle3: "Suite la semaine prochaine 😊.",
       },
       {
@@ -427,6 +428,17 @@ export const usePicturesStore = defineStore("pictures", {
           "Animation blindtest à l'espace coworking 'La Filature' à Louviers pour le compte de la CAF de l'Eure.",
         subtitle2:
           "Bonne ambiance une fois de plus c'était chouette. Vivement la prochaine.",
+      },
+      {
+        title: "Soirée quiz 16 à La Base à Vernon",
+        images: [laBase16],
+        published: new Date("2026-09-24T03:23:00"),
+        subtitle1:
+          "Victoire des 'fous de la messe' pour le dernier quiz de septembre.",
+        subtitle2: "Les Dexter vainqueurs pour le mois de septembre.",
+        subtitle3:
+          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
+        subtitle4: "On repart à zéro pour octobre la semaine prochaine 😊.",
       },
     ],
   }),
