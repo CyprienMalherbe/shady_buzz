@@ -62,6 +62,7 @@ import laBase151 from "@/assets/la-base-15-1.jpg"
 import laBase152 from "@/assets/la-base-15-2.jpg"
 import laBase153 from "@/assets/la-base-15-3.jpg"
 import laBase16 from "@/assets/la-base-16.jpg"
+import laBase17 from "@/assets/la-base-17.jpg"
 import laughsBistrotDuClocherImg from "@/assets/laughs-bistrot-du-clocher.jpeg"
 import NewsPaper from "@/assets/newspaper.jpeg"
 import nympheas1 from "@/assets/nympheas-01.jpeg"
@@ -439,6 +440,17 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle3:
           "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
         subtitle4: "On repart à zéro pour octobre la semaine prochaine 😊.",
+      },
+      {
+        title: "Soirée quiz 17 à La Base à Vernon",
+        images: [laBase17],
+        published: new Date("2026-10-01T03:23:00"),
+        subtitle1: "Victoire des 'Dexter' pour le premier quiz d'octobre.",
+        subtitle2:
+          "Vont-ils remporter octobre comme ils ont remporté septembre ?",
+        subtitle3:
+          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
+        subtitle4: "Suite la semaine prochaine 😊.",
       },
     ],
   }),
