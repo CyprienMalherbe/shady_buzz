@@ -27,6 +27,10 @@ import guiseniers04 from "@/assets/Guiseniers-04.jpeg"
 import guiseniers05 from "@/assets/Guiseniers-05.jpeg"
 import Guitran01 from "@/assets/guitrancourt-01.jpg"
 import Guitran02 from "@/assets/guitrancourt-02.jpg"
+import handiLimay01 from "@/assets/handi-Limay-01.jpg"
+import handiLimay02 from "@/assets/handi-Limay-02.jpg"
+import handiLimay03 from "@/assets/handi-Limay-03.jpg"
+import handiLimay04 from "@/assets/handi-Limay-04.jpg"
 import KPlusUn1 from "@/assets/k-plus-un-1.jpeg"
 import KPlusUn2 from "@/assets/k-plus-un-2.jpeg"
 import KPlusUn3 from "@/assets/k-plus-un-3.jpeg"
@@ -451,6 +455,17 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle3:
           "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
         subtitle4: "Suite la semaine prochaine 😊.",
+      },
+      {
+        title: "Après-midi séminaire à Limay",
+        images: [handiLimay01, handiLimay02, handiLimay03, handiLimay04],
+        published: new Date("2026-09-28T03:23:00"),
+        subtitle1:
+          "Ce lundi 28 septembre était marqué par les bonnes tranches de rigolade avec l'équipe de Handi Val de Seine à Limay.",
+        subtitle2:
+          "L'équipe était au top, on a pu s'amuser et jouer tous ensemble, on a même pu danser à un moment 😊.",
+        subtitle3:
+          "Vivement une prochaine de ce type, car c'était franchement top 😊.",
       },
     ],
   }),
