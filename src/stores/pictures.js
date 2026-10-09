@@ -67,6 +67,8 @@ import laBase152 from "@/assets/la-base-15-2.jpg"
 import laBase153 from "@/assets/la-base-15-3.jpg"
 import laBase16 from "@/assets/la-base-16.jpg"
 import laBase17 from "@/assets/la-base-17.jpg"
+import laBase181 from "@/assets/la-base-18-01.jpg"
+import laBase182 from "@/assets/la-base-18-02.jpg"
 import laughsBistrotDuClocherImg from "@/assets/laughs-bistrot-du-clocher.jpeg"
 import NewsPaper from "@/assets/newspaper.jpeg"
 import nympheas1 from "@/assets/nympheas-01.jpeg"
@@ -466,6 +468,17 @@ export const usePicturesStore = defineStore("pictures", {
           "L'équipe était au top, on a pu s'amuser et jouer tous ensemble, on a même pu danser à un moment 😊.",
         subtitle3:
           "Vivement une prochaine de ce type, car c'était franchement top 😊.",
+      },
+      {
+        title: "Soirée quiz 18 à La Base à Vernon",
+        images: [laBase181, laBase182],
+        published: new Date("2026-10-08T03:23:00"),
+        subtitle1:
+          "Victoire des 'G plus de moustache' pour le deuxième quiz d'octobre.",
+        subtitle2: "Ils prennent ainsi la tête du classement d'octobre.",
+        subtitle3:
+          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
+        subtitle4: "Suite la semaine prochaine 😊.",
       },
     ],
   }),
