@@ -12,6 +12,9 @@ import baptemeTom03 from "@/assets/bapteme-tom-03.jpg"
 import baptemeTom04 from "@/assets/bapteme-tom-04.jpg"
 import baptemeTom05 from "@/assets/bapteme-tom-05.jpg"
 import baptemeTom06 from "@/assets/bapteme-tom-06.jpg"
+import bouleGuitran01 from "@/assets/boule-guitrancourt-01.jpg"
+import bouleGuitran02 from "@/assets/boule-guitrancourt-02.jpg"
+import bouleGuitran03 from "@/assets/boule-guitrancourt-03.jpg"
 import chercheBistrotDuClocherImg from "@/assets/chercheBistrotDuClocher.jpeg"
 import CourcellesAllAgain from "@/assets/Courcelles-all-again.png"
 import CourcellesAll from "@/assets/Courcelles-all.png"
@@ -479,6 +482,15 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle3:
           "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
         subtitle4: "Suite la semaine prochaine 😊.",
+      },
+      {
+        title: "Soirée repas + animations à Guitrancourt",
+        images: [bouleGuitran03, bouleGuitran02, bouleGuitran01],
+        published: new Date("2026-10-10T03:23:00"),
+        subtitle1:
+          "On s'est amusés sur le thème de la pétanque pour le compte de 'La Boule de Guitrancourt' ce soir.",
+        subtitle2:
+          "Super ambiance avec un groupe très sympa et joueur. On a même pu pousser quelque peu la chansonnette sur la fin de la soirée 😊.",
       },
     ],
   }),
