@@ -72,6 +72,7 @@ import laBase16 from "@/assets/la-base-16.jpg"
 import laBase17 from "@/assets/la-base-17.jpg"
 import laBase181 from "@/assets/la-base-18-01.jpg"
 import laBase182 from "@/assets/la-base-18-02.jpg"
+import laBase19 from "@/assets/la-base-19.jpg"
 import laughsBistrotDuClocherImg from "@/assets/laughs-bistrot-du-clocher.jpeg"
 import NewsPaper from "@/assets/newspaper.jpeg"
 import nympheas1 from "@/assets/nympheas-01.jpeg"
@@ -491,6 +492,17 @@ export const usePicturesStore = defineStore("pictures", {
           "On s'est amusés sur le thème de la pétanque pour le compte de 'La Boule de Guitrancourt' ce soir.",
         subtitle2:
           "Super ambiance avec un groupe très sympa et joueur. On a même pu pousser quelque peu la chansonnette sur la fin de la soirée 😊.",
+      },
+      {
+        title: "Soirée quiz 19 à La Base à Vernon",
+        images: [laBase19],
+        published: new Date("2026-10-15T03:23:00"),
+        subtitle1: "Victoire des 'Dexter' pour le troisième quiz d'octobre.",
+        subtitle2:
+          "Cela les rapproche de l'équipe 'G plus de mouistache' pour le classement d'octobre.",
+        subtitle3:
+          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
+        subtitle4: "Suite la semaine prochaine 😊.",
       },
     ],
   }),
