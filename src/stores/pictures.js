@@ -92,6 +92,10 @@ import ROCEMS1 from "@/assets/ROCEMS-1.jpeg"
 import ROCEMS2 from "@/assets/ROCEMS-2.jpeg"
 import ROCEMS3 from "@/assets/ROCEMS-3.jpeg"
 import ROCEMS4 from "@/assets/ROCEMS-4.jpeg"
+import Seniors01 from "@/assets/seniors-01.jpeg"
+import Seniors02 from "@/assets/seniors-02.jpeg"
+import Seniors03 from "@/assets/seniors-03.jpeg"
+import Seniors04 from "@/assets/seniors-04.jpeg"
 import shadyBuzzBistrotDuClocherImg from "@/assets/shadyBuzzBistrotDuClocher.jpeg"
 import ucial01 from "@/assets/ucial-01.jpeg"
 import ucial02 from "@/assets/ucial-02.jpeg"
@@ -503,6 +507,15 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle3:
           "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
         subtitle4: "Suite la semaine prochaine 😊.",
+      },
+      {
+        title: "Après-midi quiz pour les seniors",
+        images: [Seniors01, Seniors02, Seniors03, Seniors04],
+        published: new Date("2026-10-13T03:23:00"),
+        subtitle1:
+          "À l'occasion de la semaine des seniors, une animation quiz a été proposée à la salle des fêtes de Saint-Aubin-sur-Gaillon sur le thème de la Normandie et de son patrimoine local et régional.",
+        subtitle2:
+          "C'était vraiment très chouette, d'autant plus que les participantes (et oui les filles en force) ont bien mis l'ambiance et nous ont permis de bien rire tous ensemble, merci Mesdames.",
       },
     ],
   }),
