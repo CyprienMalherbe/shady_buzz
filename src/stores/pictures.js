@@ -73,6 +73,7 @@ import laBase17 from "@/assets/la-base-17.jpg"
 import laBase181 from "@/assets/la-base-18-01.jpg"
 import laBase182 from "@/assets/la-base-18-02.jpg"
 import laBase19 from "@/assets/la-base-19.jpg"
+import laBase20 from "@/assets/la-base-20.jpg"
 import laughsBistrotDuClocherImg from "@/assets/laughs-bistrot-du-clocher.jpeg"
 import NewsPaper from "@/assets/newspaper.jpeg"
 import nympheas1 from "@/assets/nympheas-01.jpeg"
@@ -516,6 +517,16 @@ export const usePicturesStore = defineStore("pictures", {
           "À l'occasion de la semaine des seniors, une animation quiz a été proposée à la salle des fêtes de Saint-Aubin-sur-Gaillon sur le thème de la Normandie et de son patrimoine local et régional.",
         subtitle2:
           "C'était vraiment très chouette, d'autant plus que les participantes (et oui les filles en force) ont bien mis l'ambiance et nous ont permis de bien rire tous ensemble, merci Mesdames.",
+      },
+      {
+        title: "Soirée quiz 20 à La Base à Vernon",
+        images: [laBase20],
+        published: new Date("2026-10-22T03:23:00"),
+        subtitle1: "Victoire des 'Dexter' pour le quatrième quiz d'octobre.",
+        subtitle2: "Les Dexter prennent donc la tête pour ce mois-ci.",
+        subtitle3:
+          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
+        subtitle4: "Suite et fin du mois la semaine prochaine 😊.",
       },
     ],
   }),
