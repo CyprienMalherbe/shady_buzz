@@ -88,6 +88,10 @@ import ParvisMars2 from "@/assets/parvis-debut-mars-2026-2.jpeg"
 import ParvisMars3 from "@/assets/parvis-debut-mars-2026-3.jpeg"
 import ParvisMars4 from "@/assets/parvis-debut-mars-2026-4.jpeg"
 import ParvisMars from "@/assets/parvis-debut-mars-2026.jpeg"
+import pokemon202601 from "@/assets/pokemon-2026-01.jpg"
+import pokemon202602 from "@/assets/pokemon-2026-02.jpg"
+import pokemon202603 from "@/assets/pokemon-2026-03.jpg"
+import pokemon202604 from "@/assets/pokemon-2026-04.jpg"
 import presentationBistrotDuClocherImg from "@/assets/presentationBistrotDuClocher.jpeg"
 import ROCEMS1 from "@/assets/ROCEMS-1.jpeg"
 import ROCEMS2 from "@/assets/ROCEMS-2.jpeg"
@@ -527,6 +531,17 @@ export const usePicturesStore = defineStore("pictures", {
         subtitle3:
           "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
         subtitle4: "Suite et fin du mois la semaine prochaine 😊.",
+      },
+      {
+        title: "Après-midi quiz sur Pokémon",
+        images: [pokemon202604, pokemon202602, pokemon202603, pokemon202601],
+        published: new Date("2026-10-25T03:23:00"),
+        subtitle1:
+          "Après-midi sur le thème de Pokémon dans la salle des fêtes de Saint-Aubin-sur-Gaillon, grâce à l'association 'T'es pas cap'",
+        subtitle2:
+          "Petits et grands se sont bien pris au jeu, les connaissances sur Pokémon de chacun sont vraiment exceptionnelles.",
+        subtitle3:
+          "Les gagnants de chaque session ont pu repartir avec des lots offerts par l'assocaiton 'T'es pas cap', et pas des moindres : des peluches, des cartes, et des coffrets collector 30 ans.",
       },
     ],
   }),
