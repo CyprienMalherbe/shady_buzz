@@ -34,6 +34,13 @@ import handiLimay01 from "@/assets/handi-Limay-01.jpg"
 import handiLimay02 from "@/assets/handi-Limay-02.jpg"
 import handiLimay03 from "@/assets/handi-Limay-03.jpg"
 import handiLimay04 from "@/assets/handi-Limay-04.jpg"
+import jeufosse01 from "@/assets/jeuffose-01.jpg"
+import jeufosse02 from "@/assets/jeuffose-02.jpg"
+import jeufosse03 from "@/assets/jeuffose-03.jpg"
+import jeufosse04 from "@/assets/jeuffose-04.jpg"
+import jeufosse05 from "@/assets/jeuffose-05.jpg"
+import jeufosse06 from "@/assets/jeuffose-06.jpg"
+import jeufosse07 from "@/assets/jeuffose-07.jpg"
 import KPlusUn1 from "@/assets/k-plus-un-1.jpeg"
 import KPlusUn2 from "@/assets/k-plus-un-2.jpeg"
 import KPlusUn3 from "@/assets/k-plus-un-3.jpeg"
@@ -542,6 +549,25 @@ export const usePicturesStore = defineStore("pictures", {
           "Petits et grands se sont bien pris au jeu, les connaissances sur Pokémon de chacun sont vraiment exceptionnelles.",
         subtitle3:
           "Les gagnants de chaque session ont pu repartir avec des lots offerts par l'assocaiton 'T'es pas cap', et pas des moindres : des peluches, des cartes, et des coffrets collector 30 ans.",
+      },
+      {
+        title: "Semaine centres de loisirs",
+        images: [
+          jeufosse01,
+          jeufosse02,
+          jeufosse03,
+          jeufosse04,
+          jeufosse05,
+          jeufosse06,
+          jeufosse07,
+        ],
+        published: new Date("2026-10-27T03:23:00"),
+        subtitle1:
+          "Clap de fin sur ces vacances fin octobre, qui ont permis à Shady Buzz de se déplacer dans 3 nouveaux centres de loisirs.",
+        subtitle2:
+          "Tous les groupes d'âge de 3 à 14 ans ont pu profiter d'animations et de jeux, dans une ambiance tellement prenante que même les animateurs se sont pris au jeu.",
+        subtitle3:
+          "Les enfants victorieux ont même pu avoir leur petite médaille autour du cou, ce qui les a plutôt ravis 😊.",
       },
     ],
   }),
