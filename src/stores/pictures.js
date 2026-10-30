@@ -16,6 +16,7 @@ import bouleGuitran01 from "@/assets/boule-guitrancourt-01.jpg"
 import bouleGuitran02 from "@/assets/boule-guitrancourt-02.jpg"
 import bouleGuitran03 from "@/assets/boule-guitrancourt-03.jpg"
 import chercheBistrotDuClocherImg from "@/assets/chercheBistrotDuClocher.jpeg"
+import classementOctobre from "@/assets/classement-octobre.png"
 import CourcellesAllAgain from "@/assets/Courcelles-all-again.png"
 import CourcellesAll from "@/assets/Courcelles-all.png"
 import CourcellesMe from "@/assets/Courcelles-me.png"
@@ -81,6 +82,7 @@ import laBase181 from "@/assets/la-base-18-01.jpg"
 import laBase182 from "@/assets/la-base-18-02.jpg"
 import laBase19 from "@/assets/la-base-19.jpg"
 import laBase20 from "@/assets/la-base-20.jpg"
+import laBase21 from "@/assets/la-base-21.jpg"
 import laughsBistrotDuClocherImg from "@/assets/laughs-bistrot-du-clocher.jpeg"
 import NewsPaper from "@/assets/newspaper.jpeg"
 import nympheas1 from "@/assets/nympheas-01.jpeg"
@@ -568,6 +570,17 @@ export const usePicturesStore = defineStore("pictures", {
           "Tous les groupes d'âge de 3 à 14 ans ont pu profiter d'animations et de jeux, dans une ambiance tellement prenante que même les animateurs se sont pris au jeu.",
         subtitle3:
           "Les enfants victorieux ont même pu avoir leur petite médaille autour du cou, ce qui les a plutôt ravis 😊.",
+      },
+      {
+        title: "Soirée quiz 21 à La Base à Vernon",
+        images: [laBase21, classementOctobre],
+        published: new Date("2026-10-29T03:23:00"),
+        subtitle1: "Victoire des 'KNL' pour le dernier quiz d'octobre.",
+        subtitle2: "Victoire des 'G plus de moustache' pour le mois d'octobre.",
+        subtitle3:
+          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
+        subtitle4:
+          "Rendez-vous semaine prochaine pour entamer le classement de novembre.",
       },
     ],
   }),
