@@ -81,7 +81,7 @@ export default {
 .image {
   max-width: 25vw;
   width: 100%;
-  max-height: 55vh;
+  max-height: 65vh;
   border-radius: 10px;
   margin-top: 1vh;
   margin-bottom: 4vh;
