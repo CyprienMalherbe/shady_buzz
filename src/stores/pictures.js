@@ -84,6 +84,7 @@ import laBase19 from "@/assets/la-base-19.jpg"
 import laBase20 from "@/assets/la-base-20.jpg"
 import laBase21 from "@/assets/la-base-21.jpg"
 import laBase22 from "@/assets/la-base-22.jpg"
+import laBase23 from "@/assets/la-base-23.jpg"
 import laughsBistrotDuClocherImg from "@/assets/laughs-bistrot-du-clocher.jpeg"
 import NewsPaper from "@/assets/newspaper.jpeg"
 import nympheas1 from "@/assets/nympheas-01.jpeg"
@@ -593,6 +594,17 @@ export const usePicturesStore = defineStore("pictures", {
           "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
         subtitle4:
           "Rendez-vous semaine prochaine pour la deuxième de novembre.",
+      },
+      {
+        title: "Soirée quiz 23 à La Base à Vernon",
+        images: [laBase23],
+        published: new Date("2026-11-12T03:23:00"),
+        subtitle1: "Victoire des Dexter.",
+        subtitle2: "Ils s'envolent en tête du classement",
+        subtitle3:
+          "Le classement se trouve <a href='https://docs.google.com/spreadsheets/d/14VdKoYo8QVs8AbKn3Re8vgZtiNUVsTmD3ZxhdEIPi7w/edit?gid=0#gid=0' target='_blank' rel='noopener noreferrer'>ici</a>.",
+        subtitle4:
+          "Rendez-vous semaine prochaine pour la troisième de novembre.",
       },
     ],
   }),
